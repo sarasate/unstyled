@@ -1,5 +1,8 @@
 import "./normalize.js";
 
+/* Collections */
+export { default as Grid } from "./collections/Grid";
+
 /* Elements */
 export { default as Button } from "./elements/Button";
 export { default as Container } from "./elements/Container";

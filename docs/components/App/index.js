@@ -1,8 +1,9 @@
 import React from "react";
 import {
+  Button,
   Card,
   Container,
-  Button,
+  Grid,
   Header,
   Image,
   Label,
@@ -22,6 +23,13 @@ const App = () => (
       </Container>
     </NavBar>
     <Container>
+      <h1>Collections</h1>
+      <Header>Grid</Header>
+      <Grid columns={3}>
+        <Grid.Column>Column 1</Grid.Column>
+        <Grid.Column>Column 2</Grid.Column>
+        <Grid.Column>Column 3</Grid.Column>
+      </Grid>
       <h1>Elements</h1>
       {/* Button */}
       <Header>Button</Header>
