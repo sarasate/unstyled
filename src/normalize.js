@@ -6,7 +6,7 @@ injectGlobal`
 
   html {
     box-sizing: border-box;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
   }
   *, *:before, *:after {
