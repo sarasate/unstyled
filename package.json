@@ -3,7 +3,7 @@
   "version": "0.0.2",
   "description":
     "React components with minimal styling, easily to extend. Based on styled-components.",
-  "main": "./lib/index.js",
+  "main": "./dist/index.js",
   "scripts": {
     "build": "npm run clean && npm run build:dist",
     "build:dist": "BABEL_ENV=production babel src -d dist --ignore test.js",
