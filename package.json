@@ -1,0 +1,47 @@
+{
+  "name": "unstyled",
+  "version": "0.0.1",
+  "description":
+    "React components with minimal styling, easily to extend. Based on styled-components.",
+  "main": "./lib/index.js",
+  "scripts": {
+    "build": "npm run clean && npm run build:dist",
+    "build:dist": "BABEL_ENV=production babel src -d dist --ignore test.js",
+    "clean": "rimraf lib",
+    "start": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sarasate/unstyled.git"
+  },
+  "keywords": ["ui", "styled-components"],
+  "author": "Sarasate",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sarasate/unstyled/issues"
+  },
+  "homepage": "https://github.com/sarasate/unstyled#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
+    "babel-eslint": "^8.2.1",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "react-dom": "^16.2.0",
+    "react-hot-loader": "^3.0.0-beta.7",
+    "rimraf": "^2.6.1",
+    "webpack": "^3.4.1",
+    "webpack-dev-server": "^2.6.1"
+  },
+  "dependencies": {
+    "react": "^16.2.0",
+    "styled-components": "^2.1.1",
+    "styled-normalize": "^2.2.1"
+  },
+  "browserslist": ["> 1%", "last 2 versions", "Firefox ESR"],
+  "standard": {
+    "parser": "babel-eslint"
+  }
+}
