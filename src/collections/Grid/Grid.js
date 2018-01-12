@@ -4,7 +4,7 @@ import styled from "styled-components";
 /**
  * Container component for the Grid.
  */
-const Wrapper = styled.div`
+const Grid = styled.div`
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -18,9 +18,6 @@ const Wrapper = styled.div`
   -ms-flex-align: stretch;
   align-items: stretch;
   padding: 0em;
-  width: ${props => {
-    console.log(props);
-  }};
 `;
 
 /**
@@ -48,12 +45,10 @@ const childrenWithExtraProp = (children, props) =>
     });
   });
 
-const Grid = props => {
-  return (
-    <Wrapper {...props}>{childrenWithExtraProp(props.children, props)}</Wrapper>
-  );
+const Element = props => {
+  return <Grid {...props}>{childrenWithExtraProp(props.children, props)}</Grid>;
 };
 
-Grid.Column = Column;
+Element.Column = Column;
 
-export default Grid;
+export default Element;
