@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 /**
- * Element: Basic Label
+ * A Basic Label.
  */
 const Label = styled.div`
   background-color: #e8e8e8;

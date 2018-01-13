@@ -1,6 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
+/**
+ * Button Component.
+ */
 const Button = styled.a`
   color: palevioletred;
   border: 2px solid palevioletred;

@@ -1,6 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
+/**
+ * Image component.
+ */
 const Image = styled.img`
   display: block;
   flex: 0 0 auto;

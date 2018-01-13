@@ -1,6 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
+/**
+ * A major title block.
+ */
 const Header = styled.div`
   border: none;
   margin: calc(2rem - 0.14285714em) 0em 1rem;

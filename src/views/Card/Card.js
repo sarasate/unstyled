@@ -1,6 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
+/**
+ * The wrapping Card component.
+ */
 const Card = styled.div`
   border: 1px solid #e8e8e8;
   border-radius: 0.125em;
@@ -25,6 +28,9 @@ const Content = styled.div`
   padding: 0.5833em 0.833em;
 `;
 
+/**
+ * Title of the Card.
+ */
 const Header = styled.div`
   color: rgba(0, 0, 0, 0.85);
   display: block;
@@ -34,11 +40,17 @@ const Header = styled.div`
   width: inherit;
 `;
 
+/**
+ * Card meta block.
+ */
 const Meta = styled.div`
   margin-top: 0.5em;
   color: rgba(0, 0, 0, 0.4);
 `;
 
+/**
+ * Cointains the major content of a Card.
+ */
 const Description = styled.div`
   display: block;
   margin-top: 0.5em;
