@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const Container = styled.div`
+const Card = styled.div`
   border: 1px solid #e8e8e8;
   border-radius: 0.125em;
   color: rgba(0, 0, 0, 0.6);
@@ -45,11 +45,11 @@ const Description = styled.div`
   width: inherit;
 `;
 
-const Card = props => <Container>{props.children}</Container>;
+const Element = props => <Card>{props.children}</Card>;
 
-Card.Content = Content;
-Card.Header = Header;
-Card.Meta = Meta;
-Card.Description = Description;
+Element.Content = Content;
+Element.Header = Header;
+Element.Meta = Meta;
+Element.Description = Description;
 
-export default Card;
+export default Element;
