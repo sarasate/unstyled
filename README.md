@@ -1,16 +1,17 @@
-# unstyled 
+# unstyled
 
 React components with minimal styling, easily to extend. Based on styled-components. Inspired by semantic-ui.
 
-
 ## Installation
-```npm i --save unstyled```
+
+`npm i --save unstyled`
 
 or
 
-```yarn add unstyled```
+`yarn add unstyled`
 
 ## Example
+
 ```
 import React from "react";
 import {
@@ -72,7 +73,20 @@ const App = () => (
 );
 
 export default App;
+```
 
+## Extend Elements
+
+It's easy to extend elements and apply your own styles.
+Just use styled-components 
+[`extend`](https://www.styled-components.com/docs/basics#extending-styles) feature.
+
+```
+import Button from 'unstyled'
+
+const CustomButton = Button.extend`
+  color: tomato;
+`
 ```
 
 ## License
