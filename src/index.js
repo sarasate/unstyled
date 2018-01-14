@@ -2,6 +2,7 @@ import "./normalize.js";
 
 /* Collections */
 export { default as Grid } from "./collections/Grid";
+export { default as Message } from "./collections/Message";
 
 /* Elements */
 export { default as Button } from "./elements/Button";

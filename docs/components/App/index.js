@@ -7,6 +7,7 @@ import {
   Header,
   Image,
   Label,
+  Message,
   NavBar
 } from "unstyled";
 import styled from "styled-components";
@@ -33,6 +34,11 @@ const App = () => (
         <Grid.Column>Column 5</Grid.Column>
         <Grid.Column>Column 6</Grid.Column>
       </Grid>
+      <Header>Message</Header>
+      <Message>
+        <Message.Header>This is a message</Message.Header>
+        <Message.Text>This is a description of the message</Message.Text>
+      </Message>
       <h1>Elements</h1>
       {/* Button */}
       <Header>Button</Header>
