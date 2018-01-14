@@ -1,11 +1,12 @@
 import React from "react";
 import styled from "styled-components";
+import DefaultTheme from "../../themes/DefaultTheme";
 
 /**
  * Button Component.
  */
 const Button = styled.a`
-  color: palevioletred;
+  color: ${props => props.theme.primaryColor};
   border: 2px solid palevioletred;
   border-radius: 3px;
   cursor: pointer;
@@ -24,4 +25,8 @@ const Button = styled.a`
     color: white;
   }
 `;
+
+// Apply default theme.
+Button.defaultProps = { theme: DefaultTheme };
+
 export default Button;

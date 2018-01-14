@@ -1,5 +1,8 @@
 import "./normalize.js";
 
+/* Themes */
+export { default as DefaultTheme } from "./themes/DefaultTheme";
+
 /* Collections */
 export { default as Grid } from "./collections/Grid";
 export { default as Message } from "./collections/Message";
