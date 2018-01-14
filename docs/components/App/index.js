@@ -29,6 +29,9 @@ const App = () => (
         <Grid.Column>Column 1</Grid.Column>
         <Grid.Column>Column 2</Grid.Column>
         <Grid.Column>Column 3</Grid.Column>
+        <Grid.Column>Column 4</Grid.Column>
+        <Grid.Column>Column 5</Grid.Column>
+        <Grid.Column>Column 6</Grid.Column>
       </Grid>
       <h1>Elements</h1>
       {/* Button */}
