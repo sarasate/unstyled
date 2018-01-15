@@ -4,15 +4,19 @@ React components with minimal styling, easily to extend. Based on styled-compone
 
 ## Installation
 
-`npm i --save unstyled`
+```shell
+$ npm i --save unstyled
+```
 
 or
 
-`yarn add unstyled`
+```shell
+$ yarn add unstyled
+```
 
 ## Example
 
-```
+```jsx harmony
 import React from "react";
 import { Container, Button } from "unstyled";
 import styled from "styled-components";
@@ -33,7 +37,7 @@ It's easy to extend elements and apply your own styles.
 Just use styled-components
 [`extend`](https://www.styled-components.com/docs/basics#extending-styles) feature.
 
-```
+```jsx harmony
 import Button from 'unstyled'
 
 const CustomButton = Button.extend`
@@ -45,7 +49,7 @@ const CustomButton = Button.extend`
 
 Wrap your own theme via styled-components `ThemeProvider`.
 
-```
+```jsx harmony
 import styled, { ThemeProvider } from "styled-components"
 import {StyledComponentsTheme, Button} from "unstyled"
 
