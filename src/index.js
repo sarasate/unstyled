@@ -2,6 +2,9 @@ import "./normalize.js";
 
 /* Themes */
 export { default as DefaultTheme } from "./themes/DefaultTheme";
+export {
+  default as StyledComponentsTheme
+} from "./themes/StyledComponentsTheme";
 
 /* Collections */
 export { default as Grid } from "./collections/Grid";

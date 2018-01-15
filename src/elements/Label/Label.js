@@ -1,14 +1,15 @@
 import React from "react";
 import styled from "styled-components";
+import DefaultTheme from "../../themes/DefaultTheme";
 
 /**
  * A Basic Label.
  */
 const Label = styled.div`
-  background-color: #e8e8e8;
+  background-color: ${({ theme }) => theme.secondaryColor};
   border: none;
   border-radius: 0.125em;
-  color: rgba(0, 0, 0, 0.6);
+  color: ${({ theme }) => theme.primaryColor};
   display: inline-block;
   font-size: 1em;
   font-style: normal;
@@ -21,5 +22,8 @@ const Label = styled.div`
   text-decoration: none;
   vertical-align: baseline;
 `;
+
+// Default Theme
+Label.defaultProps = { theme: DefaultTheme };
 
 export default Label;

@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import DefaultTheme from "../../themes/DefaultTheme";
 
 /**
  * The Message container.
@@ -8,7 +9,7 @@ const Message = styled.div`
   position: relative;
   min-height: 1em;
   margin: 1em 0em;
-  background: #f8f8f9;
+  background: ${({ theme }) => theme.secondaryColor};
   padding: 1em 1.5em;
   line-height: 1.4285em;
   color: rgba(0, 0, 0, 0.87);
@@ -55,6 +56,10 @@ const Element = props => {
   return <Message>{props.children}</Message>;
 };
 
+// Default Theme
+Message.defaultProps = { theme: DefaultTheme };
+
+// Assign child elements
 Element.Header = Header;
 Element.Text = Text;
 

@@ -6,8 +6,8 @@ import DefaultTheme from "../../themes/DefaultTheme";
  * Button Component.
  */
 const Button = styled.a`
-  color: ${props => props.theme.primaryColor};
-  border: 2px solid palevioletred;
+  color: ${({ theme }) => theme.primaryColor};
+  border: 2px solid ${({ theme }) => theme.primaryColor};
   border-radius: 3px;
   cursor: pointer;
   display: inline-block;
@@ -21,12 +21,11 @@ const Button = styled.a`
   text-decoration: none;
   vertical-align: baseline;
   &:hover {
-    background-color: palevioletred;
-    color: white;
+    background-color: ${({ theme }) => theme.secondaryColor};
   }
 `;
 
-// Apply default theme.
+// Default Theme
 Button.defaultProps = { theme: DefaultTheme };
 
 export default Button;
