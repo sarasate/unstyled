@@ -6,6 +6,7 @@ import {
   Grid,
   Header,
   Image,
+  Item,
   Label,
   Menu,
   Message,
@@ -25,6 +26,7 @@ const App = () => (
       </Container>
     </NavBar>
     <Container>
+      {/* Collections */}
       <h1>Collections</h1>
       <Header>Grid</Header>
       <Grid columns={3}>
@@ -47,6 +49,8 @@ const App = () => (
         <Message.Header>This is a message</Message.Header>
         <Message.Text>This is a description of the message</Message.Text>
       </Message>
+
+      {/* Elements */}
       <h1>Elements</h1>
       {/* Button */}
       <Header>Button</Header>
@@ -60,7 +64,10 @@ const App = () => (
       {/* Label */}
       <Header>Label</Header>
       <Label>Basic Label</Label>
+
+      {/* Views*/}
       <h1>Views</h1>
+      {/* Card */}
       <Header>Card</Header>
       <Card>
         <Image src="https://react.semantic-ui.com/assets/images/avatar/large/matthew.png" />
@@ -70,6 +77,26 @@ const App = () => (
           <Card.Description>This is a sample card.</Card.Description>
         </Card.Content>
       </Card>
+      {/* Item */}
+      <Header>Item</Header>
+      <Item>
+        <Item.Content>
+          <Item.Header>Item 1</Item.Header>
+          <Item.Text>Item Text</Item.Text>
+        </Item.Content>
+      </Item>
+      <Item>
+        <Item.Content>
+          <Item.Header>Item 2</Item.Header>
+          <Item.Text>Item Text</Item.Text>
+        </Item.Content>
+      </Item>
+      <Item>
+        <Item.Content>
+          <Item.Header>Item 3</Item.Header>
+          <Item.Text>Item Text </Item.Text>
+        </Item.Content>
+      </Item>
     </Container>
   </div>
 );

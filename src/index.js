@@ -21,3 +21,4 @@ export { default as NavBar } from "./elements/NavBar";
 
 /* Views */
 export { default as Card } from "./views/Card";
+export { default as Item } from "./views/Item";
