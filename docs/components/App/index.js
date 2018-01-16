@@ -7,6 +7,7 @@ import {
   Header,
   Image,
   Label,
+  Menu,
   Message,
   NavBar
 } from "unstyled";
@@ -34,6 +35,13 @@ const App = () => (
         <Grid.Column>Column 5</Grid.Column>
         <Grid.Column>Column 6</Grid.Column>
       </Grid>
+
+      <Header>Menu</Header>
+      <Menu>
+        <Menu.Item href="/">Unstyled</Menu.Item>
+        <Menu.Item>Docs</Menu.Item>
+        <Menu.Item>About</Menu.Item>
+      </Menu>
       <Header>Message</Header>
       <Message>
         <Message.Header>This is a message</Message.Header>
