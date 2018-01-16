@@ -1,4 +1,5 @@
 docs/
 src/
+gatsby/
 .babelrc
 webpack.config.js
