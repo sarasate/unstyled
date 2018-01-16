@@ -7685,9 +7685,9 @@ unset-value@^1.0.0:
     has-value "^0.3.1"
     isobject "^3.0.0"
 
-unstyled@^0.0.6:
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/unstyled/-/unstyled-0.0.6.tgz#8cf75df2a59f7ff5676fbe24fba8dabb883d15eb"
+unstyled@^0.0.7:
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/unstyled/-/unstyled-0.0.7.tgz#aaf52a17b4c2bac2226e873fe1c0fa08ef360fb5"
   dependencies:
     react "^16.2.0"
     styled-components "^2.1.1"
