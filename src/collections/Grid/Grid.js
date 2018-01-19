@@ -2,6 +2,18 @@ import React from "react";
 import styled from "styled-components";
 
 /**
+ * A Column of the Grid.
+ */
+const Column = styled.div`
+  display: inline-block;
+  position: relative;
+  width: ${({ width }) => width};
+  padding-left: 1rem;
+  padding-right: 1rem;
+  vertical-align: top;
+`;
+
+/**
  * Container component for the Grid.
  */
 const Grid = styled.div`
@@ -18,18 +30,11 @@ const Grid = styled.div`
   -ms-flex-align: stretch;
   align-items: stretch;
   padding: 0em;
-`;
 
-/**
- * A Column of the Grid.
- */
-const Column = styled.div`
-  display: inline-block;
-  position: relative;
-  width: ${({ width }) => (width ? width : "6.25%")};
-  padding-left: 1rem;
-  padding-right: 1rem;
-  vertical-align: top;
+  // Calculate width for contained columns.
+  ${Column} {
+    width: ${({ columns }) => (columns ? 100 / columns + "%" : "6.25%")};
+  }
 `;
 
 /**
@@ -45,10 +50,7 @@ const childrenWithExtraProp = (children, props) =>
     });
   });
 
-const Element = props => {
-  return <Grid {...props}>{childrenWithExtraProp(props.children, props)}</Grid>;
-};
+// Assign children.
+Grid.Column = Column;
 
-Element.Column = Column;
-
-export default Element;
+export default Grid;

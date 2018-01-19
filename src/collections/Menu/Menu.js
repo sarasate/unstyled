@@ -48,18 +48,9 @@ const Item = styled.a`
   }
 `;
 
-/**
- * Wrapper element for Menu.
- * @param props
- * @returns {*}
- */
-const Element = props => {
-  return <Menu>{props.children}</Menu>;
-};
-
 Menu.defaultProps = { theme: DefaultTheme };
 Item.defaultProps = { theme: DefaultTheme };
 
-Element.Item = Item;
+Menu.Item = Item;
 
-export default Element;
+export default Menu;

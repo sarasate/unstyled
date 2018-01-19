@@ -56,14 +56,10 @@ const Text = styled.p`
   }
 `;
 
-const Element = props => {
-  return <Message>{props.children}</Message>;
-};
-
 // Default Theme
 Message.defaultProps = { theme: DefaultTheme };
 
-// Assign child elements
+// Assign children
 Message.Header = Header;
 Message.Text = Text;
 
