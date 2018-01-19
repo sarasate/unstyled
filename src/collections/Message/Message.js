@@ -12,7 +12,8 @@ const Message = styled.div`
   background: ${({ theme }) => theme.secondaryColor};
   padding: 1em 1.5em;
   line-height: 1.4285em;
-  color: rgba(0, 0, 0, 0.87);
+  //color: rgba(0, 0, 0, 0.87);
+  color: ${({ theme, color }) => (color ? theme[color] : theme.primaryColor)};
   -webkit-transition: opacity 0.1s ease, color 0.1s ease, background 0.1s ease,
     -webkit-box-shadow 0.1s ease;
   transition: opacity 0.1s ease, color 0.1s ease, background 0.1s ease,
@@ -23,9 +24,12 @@ const Message = styled.div`
     box-shadow 0.1s ease, -webkit-box-shadow 0.1s ease;
   border-radius: 0.25rem;
   -webkit-box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.22) inset,
-    0px 0px 0px 0px rgba(0, 0, 0, 0);
-  box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.22) inset,
-    0px 0px 0px 0px rgba(0, 0, 0, 0);
+    0px 0px 0px 0px
+      ${({ theme, color }) => (color ? theme[color] : theme.primaryColor)};
+  box-shadow: 0px 0px 0px 1px
+      ${({ theme, color }) => (color ? theme[color] : theme.primaryColor)} inset,
+    0px 0px 0px 0px
+      ${({ theme, color }) => (color ? theme[color] : theme.primaryColor)};
   &:first-child {
     margin-top: 0em;
   }
@@ -60,7 +64,7 @@ const Element = props => {
 Message.defaultProps = { theme: DefaultTheme };
 
 // Assign child elements
-Element.Header = Header;
-Element.Text = Text;
+Message.Header = Header;
+Message.Text = Text;
 
-export default Element;
+export default Message;

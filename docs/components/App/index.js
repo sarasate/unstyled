@@ -19,6 +19,18 @@ const Brand = styled.div`
   font-weight: bold;
 `;
 
+// Extend the basic button.
+const ColoredButton = Button.extend`
+  color: palevioletred;
+  border-color: palevioletred;
+`;
+
+const ColoredMessage = Message.extend`
+  color: palevioletred;
+  border-color: palevioletred;
+  box-shadow: 0px 0px 0px 1px palevioletred inset, 0px 0px 0px 0px palevioletred;
+`;
+
 const App = () => (
   <div>
     <NavBar>
@@ -50,6 +62,14 @@ const App = () => (
         <Message.Header>This is a message</Message.Header>
         <Message.Text>This is a description of the message</Message.Text>
       </Message>
+      <Message color="red">
+        <Message.Header>This is a themed colored message</Message.Header>
+        <Message.Text>This is a description of the message</Message.Text>
+      </Message>
+      <ColoredMessage>
+        <Message.Header>This is an extended colored message.</Message.Header>
+        <Message.Text>This is a description of a colored message.</Message.Text>
+      </ColoredMessage>
 
       {/* Elements */}
       <h1>Elements</h1>
@@ -57,6 +77,7 @@ const App = () => (
       <Header>Button</Header>
       <Button>Basic Button</Button>
       {/* Image */}
+      <ColoredButton>Colored Button</ColoredButton>
       <Header>Image</Header>
       <Image
         src="https://react.semantic-ui.com/assets/images/avatar/large/matthew.png"
