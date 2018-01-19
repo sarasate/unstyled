@@ -1,6 +1,6 @@
 {
   "name": "unstyled",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description":
     "React components with minimal styling, easily to extend. Based on styled-components.",
   "main": "./dist/index.js",
