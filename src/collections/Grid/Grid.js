@@ -37,20 +37,6 @@ const Grid = styled.div`
   }
 `;
 
-/**
- * Push `Grid` props to its children.
- * @param children
- * @param props
- * @returns {Object}
- */
-const childrenWithExtraProp = (children, props) =>
-  React.Children.map(children, child => {
-    return React.cloneElement(child, {
-      width: 100 / props.columns + "%"
-    });
-  });
-
-// Assign children.
 Grid.Column = Column;
 
 export default Grid;
