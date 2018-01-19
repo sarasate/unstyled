@@ -5988,7 +5988,7 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.5.8:
+prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.5.8, prop-types@^15.6.0:
   version "15.6.0"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.0.tgz#ceaf083022fc46b4a35f69e13ef75aed0d639856"
   dependencies:
@@ -6234,6 +6234,15 @@ react@^15.6.0:
     loose-envify "^1.1.0"
     object-assign "^4.1.0"
     prop-types "^15.5.10"
+
+react@^16.2.0:
+  version "16.2.0"
+  resolved "https://registry.yarnpkg.com/react/-/react-16.2.0.tgz#a31bd2dab89bff65d42134fa187f24d054c273ba"
+  dependencies:
+    fbjs "^0.8.16"
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+    prop-types "^15.6.0"
 
 read-cache@^1.0.0:
   version "1.0.0"
@@ -7320,7 +7329,7 @@ style-loader@^0.13.0:
   dependencies:
     loader-utils "^1.0.2"
 
-styled-components@^2.4.0:
+styled-components@^2.1.1, styled-components@^2.4.0:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/styled-components/-/styled-components-2.4.0.tgz#086d0fd483d54638837fca3ea546a030b94adf75"
   dependencies:
@@ -7332,6 +7341,10 @@ styled-components@^2.4.0:
     prop-types "^15.5.4"
     stylis "^3.4.0"
     supports-color "^3.2.3"
+
+styled-normalize@^2.2.1:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/styled-normalize/-/styled-normalize-2.3.0.tgz#0ab118085955d37ec03c5c418032bfd68ad649d6"
 
 stylis@^3.4.0:
   version "3.4.8"
@@ -7671,6 +7684,14 @@ unset-value@^1.0.0:
   dependencies:
     has-value "^0.3.1"
     isobject "^3.0.0"
+
+unstyled@^0.0.9:
+  version "0.0.9"
+  resolved "https://registry.yarnpkg.com/unstyled/-/unstyled-0.0.9.tgz#853258826dfcc76075166ccb0a3f8b775faf6f90"
+  dependencies:
+    react "^16.2.0"
+    styled-components "^2.1.1"
+    styled-normalize "^2.2.1"
 
 unzip-response@^2.0.1:
   version "2.0.1"
