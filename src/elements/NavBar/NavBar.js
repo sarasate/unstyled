@@ -9,6 +9,4 @@ const NavBar = styled.div`
   position: relative;
 `;
 
-const Element = props => <NavBar>{props.children}</NavBar>;
-
-export default Element;
+export default NavBar;
