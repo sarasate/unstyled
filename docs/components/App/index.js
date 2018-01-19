@@ -8,6 +8,7 @@ import {
   Image,
   Item,
   Label,
+  Loader,
   Menu,
   Message,
   NavBar
@@ -64,6 +65,19 @@ const App = () => (
       {/* Label */}
       <Header>Label</Header>
       <Label>Basic Label</Label>
+
+      {/* Loader */}
+      <Header>Loader</Header>
+      <div
+        style={{
+          height: 100,
+          width: 200,
+          border: "1px solid silver",
+          position: "relative"
+        }}
+      >
+        <Loader />
+      </div>
 
       {/* Views*/}
       <h1>Views</h1>

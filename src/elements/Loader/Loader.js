@@ -3,16 +3,19 @@ import styled from "styled-components";
 
 const Loader = styled.div`
   display: block;
-  position: relative;
+  position: absolute;
   top: 50%;
   left: 50%;
-  margin: 0;
+  margin: 0px;
   text-align: center;
-  vertical-align: middle;
   z-index: 1000;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
+  /* 'transform' (%) doesn't seem to work with 'animation'. 
+  Fixing it for now with an absolute value.
+  TODO: Solve with relative value (%).*/
+  -webkit-transform: translateY(-1.1rem);
+  transform: translateY(-1.1rem);
 
+  /* Static Shape */
   &:before {
     position: absolute;
     content: "";
@@ -24,6 +27,7 @@ const Loader = styled.div`
     border: 0.2em solid rgba(0, 0, 0, 0.1);
   }
 
+  /* Active Shape */
   &:after {
     position: absolute;
     content: "";
@@ -42,12 +46,7 @@ const Loader = styled.div`
     box-shadow: 0px 0px 0px 1px transparent;
   }
 
-  &:before,
-  &:after {
-    width: 2.28571429rem;
-    height: 2.28571429rem;
-    margin: 0em 0em 0em -1.14285714rem;
-  }
+  /* Active Animation */
   @-webkit-keyframes loader {
     from {
       -webkit-transform: rotate(0deg);
@@ -68,6 +67,222 @@ const Loader = styled.div`
       transform: rotate(360deg);
     }
   }
+
+  &:before,
+  &:after {
+    width: 2.2rem;
+    height: 2.2rem;
+    margin: 0em 0em 0em -1.14rem;
+  }
+
+  /*!* Sizes *!
+.ui.mini.loader:before,
+.ui.mini.loader:after {
+  width: 1rem;
+  height: 1rem;
+  margin: 0em 0em 0em -0.5rem;
+}
+.ui.tiny.loader:before,
+.ui.tiny.loader:after {
+  width: 1.14285714rem;
+  height: 1.14285714rem;
+  margin: 0em 0em 0em -0.57142857rem;
+}
+.ui.small.loader:before,
+.ui.small.loader:after {
+  width: 1.71428571rem;
+  height: 1.71428571rem;
+  margin: 0em 0em 0em -0.85714286rem;
+}
+.ui.loader:before,
+.ui.loader:after {
+  width: 2.28571429rem;
+  height: 2.28571429rem;
+  margin: 0em 0em 0em -1.14285714rem;
+}
+.ui.large.loader:before,
+.ui.large.loader:after {
+  width: 3.42857143rem;
+  height: 3.42857143rem;
+  margin: 0em 0em 0em -1.71428571rem;
+}
+.ui.big.loader:before,
+.ui.big.loader:after {
+  width: 3.71428571rem;
+  height: 3.71428571rem;
+  margin: 0em 0em 0em -1.85714286rem;
+}
+.ui.huge.loader:before,
+.ui.huge.loader:after {
+  width: 4.14285714rem;
+  height: 4.14285714rem;
+  margin: 0em 0em 0em -2.07142857rem;
+}
+.ui.massive.loader:before,
+.ui.massive.loader:after {
+  width: 4.57142857rem;
+  height: 4.57142857rem;
+  margin: 0em 0em 0em -2.28571429rem;
+}
+
+!*-------------------
+      Coupling
+--------------------*!
+
+
+!* Show inside active dimmer *!
+.ui.dimmer .loader {
+  display: block;
+}
+
+!* Black Dimmer *!
+.ui.dimmer .ui.loader {
+  color: rgba(255, 255, 255, 0.9);
+}
+.ui.dimmer .ui.loader:before {
+  border-color: rgba(255, 255, 255, 0.15);
+}
+.ui.dimmer .ui.loader:after {
+  border-color: #FFFFFF transparent transparent;
+}
+
+!* White Dimmer (Inverted) *!
+.ui.inverted.dimmer .ui.loader {
+  color: rgba(0, 0, 0, 0.87);
+}
+.ui.inverted.dimmer .ui.loader:before {
+  border-color: rgba(0, 0, 0, 0.1);
+}
+.ui.inverted.dimmer .ui.loader:after {
+  border-color: #767676 transparent transparent;
+}
+
+
+!*******************************
+             Types
+*******************************!
+
+
+!*-------------------
+        Text
+--------------------*!
+
+.ui.text.loader {
+  width: auto !important;
+  height: auto !important;
+  text-align: center;
+  font-style: normal;
+}
+
+
+!*******************************
+            States
+*******************************!
+
+.ui.indeterminate.loader:after {
+  -webkit-animation-direction: reverse;
+          animation-direction: reverse;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+}
+.ui.loader.active,
+.ui.loader.visible {
+  display: block;
+}
+.ui.loader.disabled,
+.ui.loader.hidden {
+  display: none;
+}
+
+
+!*******************************
+            Variations
+*******************************!
+
+
+!*-------------------
+        Sizes
+--------------------*!
+
+
+!* Loader *!
+.ui.inverted.dimmer .ui.mini.loader,
+.ui.mini.loader {
+  width: 1rem;
+  height: 1rem;
+  font-size: 0.78571429em;
+}
+.ui.inverted.dimmer .ui.tiny.loader,
+.ui.tiny.loader {
+  width: 1.14285714rem;
+  height: 1.14285714rem;
+  font-size: 0.85714286em;
+}
+.ui.inverted.dimmer .ui.small.loader,
+.ui.small.loader {
+  width: 1.71428571rem;
+  height: 1.71428571rem;
+  font-size: 0.92857143em;
+}
+.ui.inverted.dimmer .ui.loader,
+.ui.loader {
+  width: 2.28571429rem;
+  height: 2.28571429rem;
+  font-size: 1em;
+}
+.ui.inverted.dimmer .ui.large.loader,
+.ui.large.loader {
+  width: 3.42857143rem;
+  height: 3.42857143rem;
+  font-size: 1.14285714em;
+}
+.ui.inverted.dimmer .ui.big.loader,
+.ui.big.loader {
+  width: 3.71428571rem;
+  height: 3.71428571rem;
+  font-size: 1.28571429em;
+}
+.ui.inverted.dimmer .ui.huge.loader,
+.ui.huge.loader {
+  width: 4.14285714rem;
+  height: 4.14285714rem;
+  font-size: 1.42857143em;
+}
+.ui.inverted.dimmer .ui.massive.loader,
+.ui.massive.loader {
+  width: 4.57142857rem;
+  height: 4.57142857rem;
+  font-size: 1.71428571em;
+}
+
+!* Text Loader *!
+.ui.mini.text.loader {
+  min-width: 1rem;
+  padding-top: 1.78571429rem;
+}
+.ui.tiny.text.loader {
+  min-width: 1.14285714rem;
+  padding-top: 1.92857143rem;
+}
+.ui.small.text.loader {
+  min-width: 1.71428571rem;
+  padding-top: 2.5rem;
+}
+.ui.text.loader {
+  min-width: 2.28571429rem;
+  padding-top: 3.07142857rem;
+}
+.ui.large.text.loader {
+  min-width: 3.42857143rem;
+  padding-top: 4.21428571rem;
+}
+.ui.big.text.loader {
+  min-width: 3.71428571rem;
+  padding-top: 4.5rem;
+}
+.ui.huge.text.loader {
+  min-width: 4.14285714rem;
+  padding*/
 `;
 
 export default Loader;
