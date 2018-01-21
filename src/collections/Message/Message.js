@@ -1,4 +1,5 @@
 import React from "react";
+import { PropTypes } from "prop-types";
 import styled from "styled-components";
 import DefaultTheme from "../../themes/DefaultTheme";
 
@@ -22,7 +23,7 @@ const Message = styled.div`
     box-shadow 0.1s ease;
   transition: opacity 0.1s ease, color 0.1s ease, background 0.1s ease,
     box-shadow 0.1s ease, -webkit-box-shadow 0.1s ease;
-  border-radius: 0.25rem;
+  border-radius: ${({ rounded }) => (rounded ? "0.25rem" : 0)};
   -webkit-box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.22) inset,
     0px 0px 0px 0px
       ${({ theme, color }) => (color ? theme[color] : theme.primaryColor)};
@@ -55,6 +56,12 @@ const Text = styled.p`
     margin-bottom: 0em;
   }
 `;
+
+// Props
+Message.propTypes = {
+  color: PropTypes.string,
+  rounded: PropTypes.bool
+};
 
 // Default Theme
 Message.defaultProps = { theme: DefaultTheme };

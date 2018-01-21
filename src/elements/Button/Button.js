@@ -1,4 +1,5 @@
 import React from "react";
+import { PropTypes } from "prop-types";
 import styled from "styled-components";
 import DefaultTheme from "../../themes/DefaultTheme";
 
@@ -8,7 +9,7 @@ import DefaultTheme from "../../themes/DefaultTheme";
 const Button = styled.a`
   color: ${({ theme }) => theme.primaryColor};
   border: 2px solid ${({ theme }) => theme.primaryColor};
-  border-radius: 3px;
+  border-radius: ${({ rounded }) => (rounded ? ".15rem" : 0)};
   cursor: pointer;
   display: inline-block;
   font-size: 1.1em;
@@ -24,6 +25,11 @@ const Button = styled.a`
     background-color: ${({ theme }) => theme.secondaryColor};
   }
 `;
+
+// Props
+Button.propTypes = {
+  rounded: PropTypes.bool
+};
 
 // Default Theme
 Button.defaultProps = { theme: DefaultTheme };

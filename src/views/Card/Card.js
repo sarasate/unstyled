@@ -1,4 +1,5 @@
 import React from "react";
+import { PropTypes } from "prop-types";
 import styled from "styled-components";
 
 /**
@@ -6,7 +7,7 @@ import styled from "styled-components";
  */
 const Card = styled.div`
   border: 1px solid #e8e8e8;
-  border-radius: 0.125em;
+  border-radius: ${({ rounded }) => (rounded ? "0.25rem" : 0)};
   color: rgba(0, 0, 0, 0.6);
   display: flex;
   flex-direction: column;
@@ -57,11 +58,15 @@ const Description = styled.div`
   width: inherit;
 `;
 
-const Element = props => <Card>{props.children}</Card>;
+// Props
+Card.propTypes = {
+  rounded: PropTypes.bool
+};
 
-Element.Content = Content;
-Element.Header = Header;
-Element.Meta = Meta;
-Element.Description = Description;
+// Assign children
+Card.Content = Content;
+Card.Header = Header;
+Card.Meta = Meta;
+Card.Description = Description;
 
-export default Element;
+export default Card;

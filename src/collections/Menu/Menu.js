@@ -1,4 +1,5 @@
 import React from "react";
+import { PropTypes } from "prop-types";
 import styled from "styled-components";
 import DefaultTheme from "../../themes/DefaultTheme";
 
@@ -6,7 +7,7 @@ const Menu = styled.div`
   display: flex;
   // border: 1px solid ${({ theme }) => theme.primaryColor};
   margin: 1rem 0em;
-  border-radius: 0.25rem;
+  border-radius: ${({ rounded }) => (rounded ? "0.25rem" : 0)};
   min-height: 2.875em;
   -webkit-box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.22) inset,
     0px 0px 0px 0px rgba(0, 0, 0, 0);
@@ -47,6 +48,11 @@ const Item = styled.a`
     color: ${({ theme }) => theme.black};
   }
 `;
+
+// Props
+Menu.propTypes = {
+  rounded: PropTypes.bool
+};
 
 Menu.defaultProps = { theme: DefaultTheme };
 Item.defaultProps = { theme: DefaultTheme };
