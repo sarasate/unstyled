@@ -4,6 +4,7 @@
     "React components with minimal styling, easily to extend. Based on styled-components.",
   "version": "0.0.13",
   "main": "dist/unstyled.cjs.js",
+  "module": "dist/unstyled.cjs.js",
   "author": "sarasate",
   "license": "MIT",
   "keywords": ["react", "css", "css-in-js", "styled-components", "unstyled"],
