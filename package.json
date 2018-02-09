@@ -16,7 +16,8 @@
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "styled-components": "^3.1.6"
+    "styled-components": "^3.1.6",
+    "styled-normalize": "^4.0.0"
   },
   "files": ["dist"],
   "scripts": {
@@ -39,7 +40,6 @@
     "rollup-plugin-babel": "^3.0.3",
     "rollup-plugin-commonjs": "^8.3.0",
     "rollup-plugin-node-resolve": "^3.0.2",
-    "styled-normalize": "^4.0.0",
     "start": "webpack-dev-server"
   }
 }
