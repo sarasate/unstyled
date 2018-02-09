@@ -51,9 +51,7 @@ const Text = styled.div`
   max-width: auto;
 `;
 
-const Element = props => {
-  return <Item>{props.children}</Item>;
-};
+const Element = props => <Item>{props.children}</Item>;
 
 // Default Theme
 Item.defaultProps = { theme: Theme };

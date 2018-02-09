@@ -1,15 +1,15 @@
 {
-  "env": {
-    "development": {
-      "presets": [
-        ["env", { "modules": false }],
-        "stage-0",
-        "react"
-      ],
-      "plugins": ["react-hot-loader/babel"]
-    },
-    "production": {
-      "presets": ["env", "stage-0", "react"]
-    }
-  }
+  "presets": [
+    "stage-1",
+    "react",
+    [
+      "latest",
+      {
+        "es2015": {
+          "modules": false
+        }
+      }
+    ]
+  ]
+  //  "plugins": ["external-helpers"]
 }
