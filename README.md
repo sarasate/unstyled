@@ -14,6 +14,10 @@ or
 $ yarn add unstyled
 ```
 
+### Usage with GatsbyJS
+Make sure to install "gatsby-plugin-styled-components" and configure in
+`gatsby-config` 
+
 ## Example
 
 ```jsx harmony
