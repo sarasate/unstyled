@@ -19,6 +19,7 @@ export { default as Image } from "./elements/Image";
 export { default as Label } from "./elements/Label";
 export { default as Loader } from "./elements/Loader";
 export { default as NavBar } from "./elements/NavBar";
+export { default as Segment } from "./elements/Segment";
 
 /* Views */
 export { default as Card } from "./views/Card";

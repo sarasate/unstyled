@@ -11,7 +11,8 @@ import {
   Loader,
   Menu,
   Message,
-  NavBar
+  NavBar,
+  Segment
 } from "unstyled";
 import styled from "styled-components";
 
@@ -99,6 +100,10 @@ const App = () => (
       >
         <Loader />
       </div>
+
+      {/*Segment*/}
+      <Header>Segment</Header>
+      <Segment>Segment for any kind of content</Segment>
 
       {/* Views*/}
       <h1>Views</h1>
