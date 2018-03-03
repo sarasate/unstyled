@@ -3,4 +3,3 @@ gatsby/
 .babelrc
 .idea/
 netlify.toml
-webpack.config.js

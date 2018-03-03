@@ -39,7 +39,6 @@
     "rimraf": "^2.6.2",
     "rollup-plugin-babel": "^3.0.3",
     "rollup-plugin-commonjs": "^8.3.0",
-    "rollup-plugin-node-resolve": "^3.0.2",
-    "start": "webpack-dev-server"
+    "rollup-plugin-node-resolve": "^3.0.2"
   }
 }
