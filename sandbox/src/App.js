@@ -90,7 +90,7 @@ const App = () => (
 
       {/* Loader */}
       <Header>Loader</Header>
-      <div
+      <Segment
         style={{
           height: 100,
           width: 200,
@@ -99,7 +99,7 @@ const App = () => (
         }}
       >
         <Loader />
-      </div>
+      </Segment>
 
       {/*Segment*/}
       <Header>Segment</Header>
