@@ -15,8 +15,9 @@ $ yarn add unstyled
 ```
 
 ### Usage with GatsbyJS
-Make sure to install "gatsby-plugin-styled-components" and configure in
-`gatsby-config` 
+Make sure to install "gatsby-plugin-styled-components" and configure it in
+`gatsby-config': 
+```plugins: ["gatsby-plugin-styled-components"]```
 
 ## Example
 
