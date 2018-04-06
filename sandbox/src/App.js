@@ -77,8 +77,10 @@ const App = () => (
       {/* Button */}
       <Header>Button</Header>
       <Button>Basic Button</Button>
-      {/* Image */}
       <ColoredButton>Colored Button</ColoredButton>
+      <Button rounded>Rounded Button</Button>
+
+      {/* Image */}
       <Header>Image</Header>
       <Image
         src="https://react.semantic-ui.com/assets/images/avatar/large/matthew.png"

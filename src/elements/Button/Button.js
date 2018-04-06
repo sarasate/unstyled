@@ -6,16 +6,17 @@ import DefaultTheme from "../../themes/DefaultTheme";
 /**
  * Button Component.
  */
-const Button = styled.a`
-  color: ${({ theme }) => theme.primaryColor};
+const Button = styled.button`
+  background-color: white;
   border: 2px solid ${({ theme }) => theme.primaryColor};
   border-radius: ${({ rounded }) => (rounded ? ".15rem" : 0)};
-  cursor: pointer;
   display: inline-block;
+  color: ${({ theme }) => theme.primaryColor};
+  cursor: pointer;
   font-size: 1.1em;
   font-style: normal;
   line-height: 1em;
-  margin: 0em 0.25em 0em 0em;
+  margin: 0 0.25em 0 0;
   min-height: 1em;
   padding: 0.6875em 1.5em 0.6875em;
   text-align: center;
