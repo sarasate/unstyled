@@ -6,8 +6,7 @@ injectGlobal`
 
   html {
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-family: 'Lato', sans-serif;
   }
   *, *:before, *:after {
     box-sizing: inherit;
