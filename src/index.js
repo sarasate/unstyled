@@ -12,6 +12,7 @@ export { default as Menu } from "./collections/Menu";
 export { default as Message } from "./collections/Message";
 
 /* Elements */
+export { default as Badge } from "./elements/Badge";
 export { default as Button } from "./elements/Button";
 export { default as Container } from "./elements/Container";
 export { default as Header } from "./elements/Header";

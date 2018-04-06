@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  Badge,
   Button,
   Card,
   Container,
@@ -74,6 +75,10 @@ const App = () => (
 
       {/* Elements */}
       <h1>Elements</h1>
+      {/* Badge */}
+      <Header>Badge</Header>
+      <Badge>Badge</Badge>
+
       {/* Button */}
       <Header>Button</Header>
       <Button>Basic Button</Button>
