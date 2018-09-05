@@ -45,6 +45,8 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
+    "commitizen": "^2.10.1",
+    "cz-conventional-changelog": "^2.1.0",
     "prettier": "^1.11.1",
     "rimraf": "^2.6.2",
     "rollup": "^0.65.2",
