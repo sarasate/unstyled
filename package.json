@@ -1,13 +1,18 @@
 {
   "name": "unstyled",
-  "Description":
-    "React components with minimal styling, easily to extend. Based on styled-components.",
-  "version": "0.0.14",
+  "description": "React components with minimal styling, easily to extend. Based on styled-components.",
+  "version": "0.0.0-development",
   "main": "dist/unstyled.cjs.js",
   "module": "dist/unstyled.cjs.js",
   "author": "sarasate",
   "license": "MIT",
-  "keywords": ["react", "css", "css-in-js", "styled-components", "unstyled"],
+  "keywords": [
+    "react",
+    "css",
+    "css-in-js",
+    "styled-components",
+    "unstyled"
+  ],
   "homepage": "http://www.unstyled.io",
   "bugs": {
     "url": "https://github.com/sarasate/unstyled/issues"
@@ -19,16 +24,20 @@
     "styled-components": "^3.1.6",
     "styled-normalize": "^4.0.0"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "rollup -c",
     "prebuild": "rimraf dist",
     "prepublish": "yarn build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "travis-deploy-once": "travis-deploy-once",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sarasate/unstyled.git"
+    "url": "https://github.com/sarasate/unstyled.git"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -40,6 +49,8 @@
     "rimraf": "^2.6.2",
     "rollup-plugin-babel": "^3.0.3",
     "rollup-plugin-commonjs": "^8.3.0",
-    "rollup-plugin-node-resolve": "^3.0.2"
+    "rollup-plugin-node-resolve": "^3.0.2",
+    "travis-deploy-once": "^5.0.7",
+    "semantic-release": "^15.9.12"
   }
 }
