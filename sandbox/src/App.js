@@ -6,7 +6,9 @@ import {
   Container,
   Grid,
   Header,
+  Heading,
   Image,
+  Input,
   Item,
   Label,
   Link,
@@ -147,6 +149,9 @@ const App = () => (
         </Item.Content>
       </Item>
       <h1>Core</h1>
+      <Heading>Heading</Heading>
+      <Heading>Input</Heading>
+      <Input />
       <Header>Link </Header>
       <Link to="/test" external>
         Test Link
