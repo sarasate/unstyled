@@ -1,7 +1,7 @@
 {
   "name": "unstyled",
   "description": "React components with minimal styling, easily to extend. Based on styled-components.",
-  "version": "0.0.0-development",
+  "version": "0.0.15",
   "main": "dist/unstyled.cjs.js",
   "module": "dist/unstyled.cjs.js",
   "author": "sarasate",
@@ -58,7 +58,6 @@
     "rollup-plugin-babel": "^3.0.3",
     "rollup-plugin-commonjs": "^8.3.0",
     "rollup-plugin-node-resolve": "^3.0.2",
-    "semantic-release": "^15.9.12",
     "travis-deploy-once": "^5.0.7"
   }
 }
