@@ -25,3 +25,6 @@ export { default as Segment } from "./elements/Segment";
 /* Views */
 export { default as Card } from "./views/Card";
 export { default as Item } from "./views/Item";
+
+/* Core */
+export * from "./core/";

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 import {
   Badge,
   Button,
@@ -9,29 +9,31 @@ import {
   Image,
   Item,
   Label,
+  Link,
   Loader,
   Menu,
   Message,
   NavBar,
-  Segment
-} from "unstyled";
-import styled from "styled-components";
+  Segment,
+  Text,
+} from './unstyled/index'
+import styled from 'styled-components'
 
 const Brand = styled.div`
   font-weight: bold;
-`;
+`
 
 // Extend the basic button.
 const ColoredButton = Button.extend`
   color: palevioletred;
   border-color: palevioletred;
-`;
+`
 
 const ColoredMessage = Message.extend`
   color: palevioletred;
   border-color: palevioletred;
   box-shadow: 0px 0px 0px 1px palevioletred inset, 0px 0px 0px 0px palevioletred;
-`;
+`
 
 const App = () => (
   <div>
@@ -101,8 +103,8 @@ const App = () => (
         style={{
           height: 100,
           width: 200,
-          border: "1px solid silver",
-          position: "relative"
+          border: '1px solid silver',
+          position: 'relative',
         }}
       >
         <Loader />
@@ -144,8 +146,14 @@ const App = () => (
           <Item.Text>Item Text </Item.Text>
         </Item.Content>
       </Item>
+      <h1>Core</h1>
+      <Header>Link </Header>
+      <Link to="/test" external>
+        Test Link
+      </Link>
+      <Text>Text is the equivalent to a html `p` tag.</Text>
     </Container>
   </div>
-);
+)
 
-export default App;
+export default App
