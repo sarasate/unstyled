@@ -48,17 +48,14 @@ const Text = styled.div`
   font-size: 1em;
   line-height: 1.4285em;
   margin-top: 0.6em;
-  max-width: auto;
 `;
-
-const Element = props => <Item>{props.children}</Item>;
 
 // Default Theme
 Item.defaultProps = { theme: Theme };
 
 // Assign children
-Element.Content = Content;
-Element.Header = Header;
-Element.Text = Text;
+Item.Content = Content;
+Item.Header = Header;
+Item.Text = Text;
 
-export default Element;
+export default Item;
