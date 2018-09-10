@@ -1,8 +1,7 @@
-import React from "react";
-import styled from "styled-components";
+import styled from 'styled-components'
 
 const Text = styled.p`
   font-size: 1rem;
-`;
+`
 
-export default Text;
+export default Text
