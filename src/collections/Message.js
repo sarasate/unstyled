@@ -7,14 +7,16 @@ import DefaultTheme from '../themes/DefaultTheme'
  * The Message container.
  */
 export const Message = styled.div`
-  position: relative;
+  background: ${({ theme }) => theme.secondaryColor};
+  border-radius: ${({ rounded }) => (rounded ? '0.25rem' : 0)};
+  color: ${({ theme, color }) => (color ? theme[color] : theme.primaryColor)};
+  font-family: ${props => props.theme.fontFamily};
+  line-height: 1.4285em;
   min-height: 1em;
   margin: 1em 0em;
-  background: ${({ theme }) => theme.secondaryColor};
   padding: 1em 1.5em;
-  line-height: 1.4285em;
+  position: relative;
   //color: rgba(0, 0, 0, 0.87);
-  color: ${({ theme, color }) => (color ? theme[color] : theme.primaryColor)};
   -webkit-transition: opacity 0.1s ease, color 0.1s ease, background 0.1s ease,
     -webkit-box-shadow 0.1s ease;
   transition: opacity 0.1s ease, color 0.1s ease, background 0.1s ease,
@@ -23,7 +25,6 @@ export const Message = styled.div`
     box-shadow 0.1s ease;
   transition: opacity 0.1s ease, color 0.1s ease, background 0.1s ease,
     box-shadow 0.1s ease, -webkit-box-shadow 0.1s ease;
-  border-radius: ${({ rounded }) => (rounded ? '0.25rem' : 0)};
   -webkit-box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.22) inset,
     0px 0px 0px 0px
       ${({ theme, color }) => (color ? theme[color] : theme.primaryColor)};

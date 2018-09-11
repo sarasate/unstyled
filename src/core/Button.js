@@ -15,6 +15,7 @@ const Button = styled.button`
   display: inline-block;
   color: ${({ theme }) => theme.primaryColor};
   cursor: pointer;
+  font-family: ${props => props.theme.fontFamily};
   font-size: 1.1em;
   font-style: normal;
   line-height: 1em;

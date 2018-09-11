@@ -1,6 +1,7 @@
 import React from 'react'
 import { PropTypes } from 'prop-types'
 import styled from 'styled-components'
+import DefaultTheme from '../themes/DefaultTheme'
 
 /**
  * The wrapping Card component.
@@ -10,6 +11,7 @@ export const Card = styled.div`
   border-radius: ${({ rounded }) => (rounded ? '0.25rem' : 0)};
   color: rgba(0, 0, 0, 0.6);
   display: flex;
+  font-family: ${props => props.theme.fontFamily};
   flex-direction: column;
   flex-wrap: wrap;
   font-size: 1em;
@@ -26,6 +28,7 @@ export const Card = styled.div`
  * Content Wrapper.
  */
 const Content = styled.div`
+  font-family: ${props => props.theme.fontFamily};
   padding: 0.5833em 0.833em;
 `
 
@@ -35,6 +38,7 @@ const Content = styled.div`
 const Header = styled.div`
   color: rgba(0, 0, 0, 0.85);
   display: block;
+  font-family: ${props => props.theme.fontFamily};
   font-weight: bold;
   line-height: 1em;
   font-size: 1.3em;
@@ -45,8 +49,9 @@ const Header = styled.div`
  * Card meta block.
  */
 const Meta = styled.div`
-  margin-top: 0.5em;
+  font-family: ${props => props.theme.fontFamily};
   color: rgba(0, 0, 0, 0.4);
+  margin-top: 0.5em;
 `
 
 /**
@@ -54,6 +59,7 @@ const Meta = styled.div`
  */
 const Description = styled.div`
   display: block;
+  font-family: ${props => props.theme.fontFamily};
   margin-top: 0.5em;
   width: inherit;
 `
@@ -62,6 +68,8 @@ const Description = styled.div`
 Card.propTypes = {
   rounded: PropTypes.bool,
 }
+
+Card.defaultProps = { theme: DefaultTheme }
 
 // Assign children
 Card.Content = Content

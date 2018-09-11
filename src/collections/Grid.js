@@ -1,16 +1,18 @@
 import React from 'react'
 import styled from 'styled-components'
+import DefaultTheme from '../themes/DefaultTheme'
 
 /**
  * A Column of the Grid.
  */
 const Column = styled.div`
   display: inline-block;
-  position: relative;
-  width: ${({ width }) => width};
+  font-family: ${props => props.theme.fontFamily};
   padding-left: 1rem;
   padding-right: 1rem;
+  position: relative;
   vertical-align: top;
+  width: ${({ width }) => width};
 `
 
 /**
@@ -36,6 +38,7 @@ export const Grid = styled.div`
     width: ${({ columns }) => (columns ? 100 / columns + '%' : '6.25%')};
   }
 `
+Column.defaultProps = { theme: DefaultTheme }
 
 Grid.Column = Column
 

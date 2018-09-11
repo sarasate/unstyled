@@ -1,11 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
+import DefaultTheme from '../themes/DefaultTheme'
 
 /**
  * A Container limits it's content to a maximum width.
  */
 export const Container = styled.div`
   display: block;
+  font-family: ${props => props.theme.fontFamily};
   margin: 0 auto;
   max-width: 960px;
 
@@ -37,5 +39,9 @@ export const Container = styled.div`
     margin-right: auto !important;
   }
 `
+
+Container.defaultProps = {
+  theme: DefaultTheme,
+}
 
 export default Container

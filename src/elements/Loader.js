@@ -3,11 +3,11 @@ import styled from 'styled-components'
 
 export const Loader = styled.div`
   display: block;
-  position: absolute;
-  top: 50%;
   left: 50%;
   margin: 0px;
+  position: absolute;
   text-align: center;
+  top: 50%;
   z-index: 1000;
   /* 'transform' (%) doesn't seem to work with 'animation'. 
   Fixing it for now with an absolute value.
@@ -17,33 +17,33 @@ export const Loader = styled.div`
 
   /* Static Shape */
   &:before {
-    position: absolute;
-    content: '';
-    top: 0%;
-    left: 50%;
-    width: 100%;
-    height: 100%;
     border-radius: 500rem;
     border: 0.2em solid rgba(0, 0, 0, 0.1);
+    content: '';
+    height: 100%;
+    left: 50%;
+    position: absolute;
+    top: 0%;
+    width: 100%;
   }
 
   /* Active Shape */
   &:after {
-    position: absolute;
     content: '';
-    top: 0%;
-    left: 50%;
-    width: 100%;
     height: 100%;
-    -webkit-animation: loader 0.6s linear;
-    animation: loader 0.6s linear;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
+    left: 50%;
     border-radius: 500rem;
     border-color: #767676 transparent transparent;
     border-style: solid;
     border-width: 0.2em;
     box-shadow: 0px 0px 0px 1px transparent;
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    animation: loader 0.6s linear;
+    animation-iteration-count: infinite;
+    -webkit-animation: loader 0.6s linear;
+    -webkit-animation-iteration-count: infinite;
   }
 
   /* Active Animation */
@@ -70,9 +70,9 @@ export const Loader = styled.div`
 
   &:before,
   &:after {
-    width: 2.2rem;
     height: 2.2rem;
     margin: 0em 0em 0em -1.14rem;
+    width: 2.2rem;
   }
 
   /*!* Sizes *!

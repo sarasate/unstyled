@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import DefaultTheme from "../themes/DefaultTheme";
+import React from 'react'
+import styled from 'styled-components'
+import DefaultTheme from '../themes/DefaultTheme'
 
 /**
  * A Basic Label representing a HTML form label.
@@ -11,6 +11,7 @@ export const Badge = styled.span`
   border-radius: 0.125em;
   color: ${({ theme }) => theme.primaryColor};
   display: inline-block;
+  font-family: ${props => props.theme.fontFamily};
   font-size: 1em;
   font-style: normal;
   font-weight: bold;
@@ -21,9 +22,9 @@ export const Badge = styled.span`
   text-align: center;
   text-decoration: none;
   vertical-align: baseline;
-`;
+`
 
 // Default Theme
-Badge.defaultProps = { theme: DefaultTheme };
+Badge.defaultProps = { theme: DefaultTheme }
 
-export default Badge;
+export default Badge
