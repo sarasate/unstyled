@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react'
+import styled from 'styled-components'
 
 /**
  * A Column of the Grid.
@@ -11,12 +11,12 @@ const Column = styled.div`
   padding-left: 1rem;
   padding-right: 1rem;
   vertical-align: top;
-`;
+`
 
 /**
  * Container component for the Grid.
  */
-const Grid = styled.div`
+export const Grid = styled.div`
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -33,10 +33,10 @@ const Grid = styled.div`
 
   // Calculate width for contained columns.
   ${Column} {
-    width: ${({ columns }) => (columns ? 100 / columns + "%" : "6.25%")};
+    width: ${({ columns }) => (columns ? 100 / columns + '%' : '6.25%')};
   }
-`;
+`
 
-Grid.Column = Column;
+Grid.Column = Column
 
-export default Grid;
+export default Grid

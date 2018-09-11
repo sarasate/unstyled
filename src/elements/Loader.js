@@ -1,7 +1,7 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react'
+import styled from 'styled-components'
 
-const Loader = styled.div`
+export const Loader = styled.div`
   display: block;
   position: absolute;
   top: 50%;
@@ -18,7 +18,7 @@ const Loader = styled.div`
   /* Static Shape */
   &:before {
     position: absolute;
-    content: "";
+    content: '';
     top: 0%;
     left: 50%;
     width: 100%;
@@ -30,7 +30,7 @@ const Loader = styled.div`
   /* Active Shape */
   &:after {
     position: absolute;
-    content: "";
+    content: '';
     top: 0%;
     left: 50%;
     width: 100%;
@@ -283,6 +283,6 @@ const Loader = styled.div`
 .ui.huge.text.loader {
   min-width: 4.14285714rem;
   padding*/
-`;
+`
 
-export default Loader;
+export default Loader

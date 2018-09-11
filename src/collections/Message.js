@@ -1,12 +1,12 @@
-import React from "react";
-import { PropTypes } from "prop-types";
-import styled from "styled-components";
-import DefaultTheme from "../../themes/DefaultTheme";
+import React from 'react'
+import { PropTypes } from 'prop-types'
+import styled from 'styled-components'
+import DefaultTheme from '../themes/DefaultTheme'
 
 /**
  * The Message container.
  */
-const Message = styled.div`
+export const Message = styled.div`
   position: relative;
   min-height: 1em;
   margin: 1em 0em;
@@ -23,7 +23,7 @@ const Message = styled.div`
     box-shadow 0.1s ease;
   transition: opacity 0.1s ease, color 0.1s ease, background 0.1s ease,
     box-shadow 0.1s ease, -webkit-box-shadow 0.1s ease;
-  border-radius: ${({ rounded }) => (rounded ? "0.25rem" : 0)};
+  border-radius: ${({ rounded }) => (rounded ? '0.25rem' : 0)};
   -webkit-box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.22) inset,
     0px 0px 0px 0px
       ${({ theme, color }) => (color ? theme[color] : theme.primaryColor)};
@@ -37,14 +37,14 @@ const Message = styled.div`
   &:last-child {
     margin-bottom: 0em;
   }
-`;
+`
 
 const Header = styled.div`
   display: block;
-  font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-weight: bold;
   margin: -0.14285714em 0em 0rem 0em;
-`;
+`
 
 const Text = styled.p`
   opacity: 0.85;
@@ -55,19 +55,19 @@ const Text = styled.p`
   &:last-child {
     margin-bottom: 0em;
   }
-`;
+`
 
 // Props
 Message.propTypes = {
   color: PropTypes.string,
-  rounded: PropTypes.bool
-};
+  rounded: PropTypes.bool,
+}
 
 // Default Theme
-Message.defaultProps = { theme: DefaultTheme };
+Message.defaultProps = { theme: DefaultTheme }
 
 // Assign children
-Message.Header = Header;
-Message.Text = Text;
+Message.Header = Header
+Message.Text = Text
 
-export default Message;
+export default Message
