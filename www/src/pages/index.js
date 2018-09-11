@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import 'components/layout.css'
 
 const IndexPage = () => [
-  <Head id="head">
+  <Head key="head">
     <Container>
       <Heading color="white">
         React components with minimal styling, easily to extend. Based on
@@ -12,7 +12,7 @@ const IndexPage = () => [
       </Heading>
     </Container>
   </Head>,
-  <Container id="content">
+  <Container key="content">
     <Text>
       Introduction After years of prototyping and building dozens of apps,
       mainly for clients, I got tired of using CSS Frameworks like Bootstrap or

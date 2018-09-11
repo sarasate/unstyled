@@ -18,15 +18,19 @@ const Header = ({ siteTitle }) => (
       }}
     >
       <Container>
-        <Item to="/">{siteTitle}</Item>
-        <Item to="/core">Core</Item>
+        <Item as={Link} to="/">
+          {siteTitle}
+        </Item>
+        <Item as={Link} to="/core">
+          Core
+        </Item>
       </Container>
     </div>
   </div>
 )
 
 // TODO Use styled-components v4 with `to` prop
-const Item = styled(Link)`
+const Item = styled.div`
   color: white;
   text-decoration: none;
   margin-right: 1rem;
