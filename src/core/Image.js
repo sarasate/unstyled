@@ -1,8 +1,9 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react'
+import styled from 'styled-components'
 
 /**
  * Image component.
+ * HTML: `img`
  */
 const Image = styled.img`
   display: block;
@@ -12,6 +13,6 @@ const Image = styled.img`
   position: relative;
   max-width: 100%;
   -webkit-box-flex: 0;
-`;
+`
 
-export default Image;
+export default Image
