@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import DefaultTheme from "../../themes/DefaultTheme";
+import DefaultTheme from "../themes/DefaultTheme";
 
 /**
  * A Basic Label representing a HTML form label.
