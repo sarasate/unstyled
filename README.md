@@ -5,28 +5,31 @@ React components with minimal styling, easily to extend. Based on styled-compone
 ## Installation
 
 ```shell
-$ npm i --save unstyled
+$ yarn add unstyled
 ```
 
-or
+or (if you prefer)
 
 ```shell
-$ yarn add unstyled
+$ npm i --save unstyled
 ```
 
 ### Usage with GatsbyJS
 As this lib is mainly used with [GatsbyJS](https://www.gatsbyjs.org) for fast prototyping of new websites I'll cover that first.
 
+```yarn add unstyled styled-components gatsby-plugin-styled-components```
+
+
 Make sure to install "gatsby-plugin-styled-components" and configure it in
 `gatsby-config': 
-```plugins: ["gatsby-plugin-styled-components"]```
+
+```plugins: ["gatsby-plugin-styled-components", ...]```
 
 ## Example
 
 ```jsx harmony
 import React from "react";
 import { Container, Button } from "unstyled";
-import styled from "styled-components";
 
 const App = () => (
   <Container>
