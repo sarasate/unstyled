@@ -1,6 +1,6 @@
 # unstyled
 
-React components with minimal styling, easily to extend. Based on styled-components. Inspired by semantic-ui.
+React components with minimal styling, easily to extend. Based on styled-components. Inspired by semantic-ui. Will cover all common used html tags and adding convenient components for widely used UI elements.  
 
 ## Installation
 
@@ -15,6 +15,8 @@ $ yarn add unstyled
 ```
 
 ### Usage with GatsbyJS
+As this lib is mainly used with [GatsbyJS](https://www.gatsbyjs.org) for fast prototyping of new websites I'll cover that first.
+
 Make sure to install "gatsby-plugin-styled-components" and configure it in
 `gatsby-config': 
 ```plugins: ["gatsby-plugin-styled-components"]```
