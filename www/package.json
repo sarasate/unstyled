@@ -4,15 +4,17 @@
   "version": "1.0.0",
   "author": "sarasate",
   "dependencies": {
+    "babel-plugin-styled-components": "^1.6.4",
     "gatsby": "next",
     "gatsby-plugin-manifest": "next",
     "gatsby-plugin-offline": "next",
     "gatsby-plugin-react-helmet": "next",
-    "gatsby-plugin-styled-components": "^2.0.11",
+    "gatsby-plugin-styled-components": "^3.0.0-rc.5",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-helmet": "^5.2.0",
-    "styled-components": "^3.4.6"
+    "styled-components": "^3.4.6",
+    "unstyled": "^0.0.15"
   },
   "keywords": [
     "gatsby"

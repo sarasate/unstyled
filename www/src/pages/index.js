@@ -1,7 +1,7 @@
 import React from 'react'
 import { Header, Text } from 'unstyled'
 
-import Layout from 'components/layout'
+import Layout from '../components/layout'
 
 const IndexPage = () => (
   <Layout>

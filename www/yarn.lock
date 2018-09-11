@@ -1381,6 +1381,12 @@ babel-plugin-remove-graphql-queries@^2.0.2-rc.3:
   version "2.0.2-rc.3"
   resolved "https://registry.yarnpkg.com/babel-plugin-remove-graphql-queries/-/babel-plugin-remove-graphql-queries-2.0.2-rc.3.tgz#82f8984e06585db4e8fe02caa68d03cec918fd57"
 
+babel-plugin-styled-components@^1.6.4:
+  version "1.6.4"
+  resolved "https://registry.yarnpkg.com/babel-plugin-styled-components/-/babel-plugin-styled-components-1.6.4.tgz#24677e5b37a85b04aed855a5f81f1c7bfec77784"
+  dependencies:
+    lodash "^4.17.10"
+
 babel-plugin-syntax-class-properties@^6.8.0:
   version "6.13.0"
   resolved "http://registry.npmjs.org/babel-plugin-syntax-class-properties/-/babel-plugin-syntax-class-properties-6.13.0.tgz#d7eb23b79a317f8543962c505b827c7d6cac27de"
@@ -3917,11 +3923,11 @@ gatsby-plugin-react-helmet@next:
   dependencies:
     "@babel/runtime" "^7.0.0"
 
-gatsby-plugin-styled-components@^2.0.11:
-  version "2.0.11"
-  resolved "http://registry.npmjs.org/gatsby-plugin-styled-components/-/gatsby-plugin-styled-components-2.0.11.tgz#c3d3438c7970bbcc116e821fb966687098bdaf57"
+gatsby-plugin-styled-components@^3.0.0-rc.5:
+  version "3.0.0-rc.5"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-styled-components/-/gatsby-plugin-styled-components-3.0.0-rc.5.tgz#19e2ab9c73f7c873a3171e73d487266f388eedc4"
   dependencies:
-    babel-runtime "^6.26.0"
+    "@babel/runtime" "^7.0.0"
 
 gatsby-react-router-scroll@^2.0.0-rc.2:
   version "2.0.0-rc.2"
@@ -6643,7 +6649,7 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@^15.5.4, prop-types@^15.6.1, prop-types@^15.6.2:
+prop-types@^15.5.4, prop-types@^15.6.0, prop-types@^15.6.1, prop-types@^15.6.2:
   version "15.6.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.2.tgz#05d5ca77b4453e985d60fc7ff8c859094a497102"
   dependencies:
@@ -6816,7 +6822,7 @@ react-dev-utils@^4.2.1:
     strip-ansi "3.0.1"
     text-table "0.2.0"
 
-react-dom@^16.4.2:
+react-dom@^16.2.0, react-dom@^16.4.2:
   version "16.5.0"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.5.0.tgz#57704e5718669374b182a17ea79a6d24922cb27d"
   dependencies:
@@ -6864,7 +6870,7 @@ react-side-effect@^1.1.0:
     exenv "^1.2.1"
     shallowequal "^1.0.1"
 
-react@^16.4.2:
+react@^16.2.0, react@^16.4.2:
   version "16.5.0"
   resolved "https://registry.yarnpkg.com/react/-/react-16.5.0.tgz#f2c1e754bf9751a549d9c6d9aca41905beb56575"
   dependencies:
@@ -7797,7 +7803,7 @@ style-loader@^0.21.0:
     loader-utils "^1.1.0"
     schema-utils "^0.4.5"
 
-styled-components@^3.4.6:
+styled-components@^3.1.6, styled-components@^3.4.6:
   version "3.4.6"
   resolved "https://registry.yarnpkg.com/styled-components/-/styled-components-3.4.6.tgz#134f1ab89ed732686bf7de3ff8fca557283cbd60"
   dependencies:
@@ -7810,6 +7816,10 @@ styled-components@^3.4.6:
     stylis "^3.5.0"
     stylis-rule-sheet "^0.0.10"
     supports-color "^3.2.3"
+
+styled-normalize@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/styled-normalize/-/styled-normalize-4.0.0.tgz#18437c655bc0c42a18f8b5345f1c310cce775c18"
 
 stylehacks@^4.0.0:
   version "4.0.0"
@@ -8171,6 +8181,16 @@ unset-value@^1.0.0:
   dependencies:
     has-value "^0.3.1"
     isobject "^3.0.0"
+
+unstyled@^0.0.15:
+  version "0.0.15"
+  resolved "https://registry.yarnpkg.com/unstyled/-/unstyled-0.0.15.tgz#1534c732ec41ad730f024eca856638b451595819"
+  dependencies:
+    prop-types "^15.6.0"
+    react "^16.2.0"
+    react-dom "^16.2.0"
+    styled-components "^3.1.6"
+    styled-normalize "^4.0.0"
 
 unzip-response@^2.0.1:
   version "2.0.1"
