@@ -92,7 +92,7 @@ const App = () => (
       {/* Image */}
       <Header>Image</Header>
       <Image
-        src="https://react.semantic-ui.com/assets/images/avatar/large/matthew.png"
+        src="https://react.semantic-ui.com/images/wireframe/image.png"
         style={{ width: 200 }}
       />
       {/* Label */}
@@ -121,7 +121,7 @@ const App = () => (
       {/* Card */}
       <Header>Card</Header>
       <Card>
-        <Image src="https://react.semantic-ui.com/assets/images/avatar/large/matthew.png" />
+        <Image src="https://react.semantic-ui.com/images/wireframe/image.png" />
         <Card.Content>
           <Card.Header>Card Title</Card.Header>
           <Card.Meta>Meta Text</Card.Meta>
