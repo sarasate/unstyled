@@ -1,11 +1,13 @@
 import React from 'react'
 import { Container, Heading, Text } from 'unstyled'
+import MainMenu from 'components/MainMenu.js'
 import styled from 'styled-components'
 import 'components/layout.css'
 
 const IndexPage = () => [
   <Head key="head">
     <Container>
+      <MainMenu />
       <Heading color="white">
         UI components with minimal styling, easy to extend. Based on
         styled-components.

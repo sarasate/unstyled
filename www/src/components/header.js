@@ -1,7 +1,7 @@
 import React from 'react'
-import styled from 'styled-components'
 import { Link } from 'gatsby'
-import { Container } from 'unstyled'
+import { Container, Menu } from 'unstyled'
+import MainMenu from 'components/MainMenu'
 
 const Header = ({ siteTitle }) => (
   <div
@@ -18,21 +18,10 @@ const Header = ({ siteTitle }) => (
       }}
     >
       <Container>
-        <Item as={Link} to="/">
-          {siteTitle}
-        </Item>
-        <Item as={Link} to="/core">
-          Core
-        </Item>
+        <MainMenu />
       </Container>
     </div>
   </div>
 )
-
-const Item = styled.div`
-  color: white;
-  text-decoration: none;
-  margin-right: 1rem;
-`
 
 export default Header
