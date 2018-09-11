@@ -1,6 +1,7 @@
 import React from 'react'
 import { Container, Heading, Text } from 'unstyled'
 import styled from 'styled-components'
+import 'components/layout.css'
 
 const IndexPage = () => [
   <Head id="head">
