@@ -1,6 +1,5 @@
 import React from 'react'
-import { Link } from 'gatsby'
-import { Container, Menu } from 'unstyled'
+import { Container } from 'unstyled'
 import MainMenu from 'components/MainMenu'
 
 const Header = ({ siteTitle }) => (
