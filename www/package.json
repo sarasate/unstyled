@@ -13,8 +13,7 @@
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-helmet": "^5.2.0",
-    "styled-components": "^3.4.6",
-    "unstyled": "^0.0.15"
+    "styled-components": "^3.4.6"
   },
   "keywords": [
     "gatsby"
