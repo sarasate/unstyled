@@ -5,7 +5,7 @@
   "author": "sarasate",
   "dependencies": {
     "babel-plugin-styled-components": "^1.6.4",
-    "gatsby": "next",
+    "gatsby": "^2.0.0-rc.19",
     "gatsby-plugin-manifest": "next",
     "gatsby-plugin-offline": "next",
     "gatsby-plugin-react-helmet": "next",

@@ -29,7 +29,6 @@ const Header = ({ siteTitle }) => (
   </div>
 )
 
-// TODO Use styled-components v4 with `to` prop
 const Item = styled.div`
   color: white;
   text-decoration: none;

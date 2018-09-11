@@ -7,7 +7,7 @@ const IndexPage = () => [
   <Head key="head">
     <Container>
       <Heading color="white">
-        React components with minimal styling, easily to extend. Based on
+        UI components with minimal styling, easy to extend. Based on
         styled-components.
       </Heading>
     </Container>
