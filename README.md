@@ -2,6 +2,15 @@
 
 React components with minimal styling, easily to extend. Based on styled-components. Inspired by semantic-ui. Will cover all common used html tags and adding convenient components for widely used UI elements.  
 
+WIP: This package is in an early alpha stage. Breaking changes can occur without notification. Already used in production (caution!). Feedback and contributions are welcome.
+
+Versioning (prior to 1.0.0)
+
+`0.Y.Z`: 
+* Y => Breaking changes and Features
+* Z => Patches 
+
+
 ## Installation
 
 ```shell
