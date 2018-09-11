@@ -1,15 +1,17 @@
-import React from "react";
-import { PropTypes } from "prop-types";
-import styled from "styled-components";
-import DefaultTheme from "../../themes/DefaultTheme";
+import React from 'react'
+import { PropTypes } from 'prop-types'
+import styled from 'styled-components'
+import DefaultTheme from '../themes/DefaultTheme'
 
 /**
- * Button Component.
+ * Button component
+ * HTML: `button`
+ * @type {StyledComponentClass<JSX.IntrinsicElements["button"], any, JSX.IntrinsicElements["button"]>}
  */
 const Button = styled.button`
   background-color: white;
   border: 2px solid ${({ theme }) => theme.primaryColor};
-  border-radius: ${({ rounded }) => (rounded ? ".15rem" : 0)};
+  border-radius: ${({ rounded }) => (rounded ? '.15rem' : 0)};
   display: inline-block;
   color: ${({ theme }) => theme.primaryColor};
   cursor: pointer;
@@ -25,14 +27,14 @@ const Button = styled.button`
   &:hover {
     background-color: ${({ theme }) => theme.secondaryColor};
   }
-`;
+`
 
 // Props
 Button.propTypes = {
-  rounded: PropTypes.bool
-};
+  rounded: PropTypes.bool,
+}
 
 // Default Theme
-Button.defaultProps = { theme: DefaultTheme };
+Button.defaultProps = { theme: DefaultTheme }
 
-export default Button;
+export default Button
