@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import DefaultTheme from '../themes/DefaultTheme'
 
 /**
  * View element
@@ -7,6 +8,9 @@ import styled from 'styled-components'
  */
 const View = styled.p`
   font-size: 1rem;
+  font-family: ${props => props.theme.fontFamily};
 `
+
+View.defaultProps = { theme: DefaultTheme }
 
 export default View

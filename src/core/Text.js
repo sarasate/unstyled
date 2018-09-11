@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import DefaultTheme from '../themes/DefaultTheme'
 
 /**
  * Text element
@@ -6,7 +7,9 @@ import styled from 'styled-components'
  * @type {StyledComponentClass<JSX.IntrinsicElements["p"], any, JSX.IntrinsicElements["p"]>}
  */
 const Text = styled.p`
+  font-family: ${props => props.theme.fontFamily};
   font-size: 1rem;
 `
+Text.defaultProps = { theme: DefaultTheme }
 
 export default Text

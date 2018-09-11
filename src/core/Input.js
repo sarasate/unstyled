@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import DefaultTheme from '../themes/DefaultTheme'
 
 /**
  * Input field, defaults to `text`.
@@ -8,8 +9,11 @@ import styled from 'styled-components'
 const Input = styled.input.attrs({
   type: 'text',
 })`
+  font-family: ${props => props.theme.fontFamily};
   font-size: 1rem;
   line-height: 2rem;
 `
+
+Input.defaultProps = { theme: DefaultTheme }
 
 export default Input
