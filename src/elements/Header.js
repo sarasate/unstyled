@@ -7,7 +7,7 @@ import DefaultTheme from '../themes/DefaultTheme'
  */
 export const Header = styled.div`
   border: none;
-  color: rgba(0, 0, 0, 0.87);
+  color: ${props => (props.color ? props.color : 'rgba(0, 0, 0, 0.87)')};
   font-family: ${props => props.theme.fontFamily};
   font-weight: bold;
   line-height: 1.28571429em;
