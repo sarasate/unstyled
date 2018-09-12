@@ -15,6 +15,7 @@ const IndexPage = () => [
     </Container>
   </Head>,
   <Container key="content">
+    <Heading>Motivation</Heading>
     <Text>
       Introduction After years of prototyping and building dozens of apps,
       mainly for clients, I got tired of using CSS Frameworks like Bootstrap or
