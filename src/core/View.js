@@ -9,6 +9,7 @@ import DefaultTheme from '../themes/DefaultTheme'
 const View = styled.p`
   font-size: 1rem;
   font-family: ${props => props.theme.fontFamily};
+  text-align: ${props => (props.centered ? 'center' : 'left')};
 `
 
 View.defaultProps = { theme: DefaultTheme }

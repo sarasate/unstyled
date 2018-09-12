@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Heading, Text } from 'unstyled'
+import { Button, Container, Heading, Link, Text, View } from 'unstyled'
 import MainMenu from 'components/MainMenu.js'
 import styled from 'styled-components'
 import 'components/layout.css'
@@ -17,6 +17,18 @@ const IndexPage = () => [
       </Heading>
     </FlexContainer>
   </Head>,
+  <Container key="source">
+    <View centered>
+      <Button
+        as={Link}
+        to="https://github.com/sarasate/unstyled"
+        external
+        target="_blank"
+      >
+        Github
+      </Button>
+    </View>
+  </Container>,
   <Container key="content">
     <Heading>Motivation</Heading>
     <Text>
@@ -38,7 +50,7 @@ export default IndexPage
 
 const Head = styled.div`
   background-color: rebeccapurple;
-  height: 400px;
+  height: 250px;
   margin: 0;
   padding: 1rem 0;
   text-align: center;
