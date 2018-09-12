@@ -9,7 +9,10 @@ const IndexPage = () => [
     <Container>
       <MainMenu />
       <Heading color="white">
-        UI components with minimal styling, easy to extend. Based on
+        Minimal UI components for the component age.
+      </Heading>
+      <Heading color="white" as="h2">
+        Extendable UI components with least opinionated style. Based on
         styled-components.
       </Heading>
     </Container>

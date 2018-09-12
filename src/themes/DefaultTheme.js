@@ -2,7 +2,7 @@
 const DefaultTheme = {
   fontFamily: "'Open Sans', sans-serif",
   fontWeight: 400,
-  headingFontWeight: 400,
+  headingFontWeight: 600,
   primaryColor: 'rgba(0,0,0,.6)',
   secondaryColor: '#f8f8f9',
   fontSize: '16px',
