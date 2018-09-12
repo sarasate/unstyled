@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Container, Heading, Link, Text, View } from 'unstyled'
+import { Button, Code, Container, Heading, Link, Text, View } from 'unstyled'
 import MainMenu from 'components/MainMenu.js'
 import styled from 'styled-components'
 import 'components/layout.css'
@@ -43,6 +43,8 @@ const IndexPage = () => [
       try and liked it immediately. Eventually I decided to share my components
       in a dedicated library because of.. well.. DRY!!!
     </Text>
+    <Heading>Installation</Heading>
+    <Code>yarn add unstyled</Code>
   </Container>,
 ]
 
@@ -51,7 +53,7 @@ export default IndexPage
 const Head = styled.div`
   background-color: rebeccapurple;
   height: 250px;
-  margin: 0;
+  margin: 0 0 2rem;
   padding: 1rem 0;
   text-align: center;
   transform: matrix(1, 0, 0, 1, 0, 0);

@@ -1,10 +1,13 @@
 /* Basic theme with minimal styling. Nearly unstyled.*/
 const DefaultTheme = {
-  fontFamily: "'Open Sans', sans-serif",
+  fontFamily:
+    'Futura PT,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Arial,sans-serif',
   fontWeight: 400,
   headingFontWeight: 600,
   primaryColor: 'rgba(0,0,0,.6)',
   secondaryColor: '#f8f8f9',
+  codeFont:
+    'Space Mono,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace',
   fontColor: 'rgb(46, 68, 78)',
   fontSize: '16px',
   red: '#DB2828',
