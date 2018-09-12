@@ -23,7 +23,7 @@ const setFontSize = value => {
 // TODO Find a solution to provide a `level` via the polymorphism prop `as`
 // of v4
 const Heading = styled.h1`
-  color: ${props => (props.color ? props.color : 'black')};
+  color: ${props => (props.color ? props.color : props.theme.fontColor)};
   display: block;
   font-family: ${props => props.theme.fontFamily};
   font-size: ${props => setFontSize(props.as)};

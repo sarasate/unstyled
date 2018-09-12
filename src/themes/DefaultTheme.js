@@ -5,6 +5,7 @@ const DefaultTheme = {
   headingFontWeight: 600,
   primaryColor: 'rgba(0,0,0,.6)',
   secondaryColor: '#f8f8f9',
+  fontColor: 'rgb(46, 68, 78)',
   fontSize: '16px',
   red: '#DB2828',
   orange: '#F2711C',

@@ -7,6 +7,7 @@ import DefaultTheme from '../themes/DefaultTheme'
  * @type {StyledComponentClass<JSX.IntrinsicElements["p"], any, JSX.IntrinsicElements["p"]>}
  */
 const Text = styled.p`
+  color: ${props => props.color || props.theme.fontColor};
   font-family: ${props => props.theme.fontFamily};
   font-size: 1rem;
   line-height: 1.5rem;
