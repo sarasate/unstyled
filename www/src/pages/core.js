@@ -6,7 +6,7 @@ const CorePage = props => {
   return (
     <Layout>
       <Header>
-        Standard elements to implement standard HTML tags as React components
+        Basic elements to implement standard HTML tags as React components.
       </Header>
       <Heading>Headings</Heading>
       <Heading as="h1">Heading 1</Heading>

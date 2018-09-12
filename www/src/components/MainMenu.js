@@ -11,6 +11,15 @@ const MainMenu = () => {
       <Menu.Item as={Link} to="/core">
         Core
       </Menu.Item>
+      <Menu.Item as={Link} to="/collections">
+        Collections
+      </Menu.Item>
+      <Menu.Item as={Link} to="/elements">
+        Elements
+      </Menu.Item>
+      <Menu.Item as={Link} to="/views">
+        Views
+      </Menu.Item>
     </Menu>
   )
 }

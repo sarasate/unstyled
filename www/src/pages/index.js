@@ -6,7 +6,7 @@ import 'components/layout.css'
 
 const IndexPage = () => [
   <Head key="head">
-    <Container>
+    <FlexContainer>
       <MainMenu />
       <Heading color="white">
         Minimal UI components for the component age.
@@ -15,7 +15,7 @@ const IndexPage = () => [
         Extendable UI components with least opinionated style. Based on
         styled-components.
       </Heading>
-    </Container>
+    </FlexContainer>
   </Head>,
   <Container key="content">
     <Heading>Motivation</Heading>
@@ -48,4 +48,9 @@ const Head = styled.div`
   transition-property: background, opacity;
   transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.4),
     cubic-bezier(0.68, -0.55, 0.265, 1.4);
+`
+
+const FlexContainer = styled(Container)`
+  display: flex;
+  flex-direction: column;
 `
