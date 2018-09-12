@@ -7,6 +7,7 @@ const Heading = styled.h1`
   color: ${props => (props.color ? props.color : 'black')};
   display: block;
   font-family: ${props => props.theme.fontFamily};
+  font-weight: ${props => props.theme.headingFontWeight};
 `
 
 Heading.defaultProps = { theme: DefaultTheme }
