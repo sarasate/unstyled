@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import DefaultTheme from 'themes/DefaultTheme'
+import DefaultTheme from '../themes/DefaultTheme'
 
 /**
  * Renders a `code` block
