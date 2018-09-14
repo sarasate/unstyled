@@ -7,15 +7,15 @@ const ElementsPage = props => {
       <Heading>Elements</Heading>
       <Header>Single elements like Badges, Segments or Labels</Header>
       {/* Badge */}
-      <Header>Badge</Header>
+      <Heading as="h2">Badge</Heading>
       <Badge>Badge</Badge>
 
       {/* Label */}
-      <Header>Label</Header>
+      <Heading as="h2">Label</Heading>
       <Label>Basic Label</Label>
 
       {/* Loader */}
-      <Header>Loader</Header>
+      <Heading as="h2">Loader</Heading>
       <Segment
         style={{
           height: 100,
@@ -28,7 +28,7 @@ const ElementsPage = props => {
       </Segment>
 
       {/*Segment*/}
-      <Header>Segment</Header>
+      <Heading as="h2">Segment</Heading>
       <Segment>Segment for any kind of content</Segment>
     </Layout>
   )

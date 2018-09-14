@@ -1,14 +1,14 @@
 import React from 'react'
 import Layout from 'components/layout.js'
 import { Header } from 'unstyled'
-import { Container, Heading, Grid, Menu, Message } from 'unstyled'
+import { Heading, Grid, Menu, Message } from 'unstyled'
 
 const CollectionsPage = props => {
   return (
     <Layout>
       <Heading>Collections</Heading>
       <Header>Aggregated elements like forms, menus and tables</Header>
-      <Header>Grid</Header>
+      <Heading as="h2">Grid</Heading>
       <Grid columns={3}>
         <Grid.Column>Column 1</Grid.Column>
         <Grid.Column>Column 2</Grid.Column>
@@ -18,13 +18,13 @@ const CollectionsPage = props => {
         <Grid.Column>Column 6</Grid.Column>
       </Grid>
 
-      <Header>Menu</Header>
+      <Heading as="h2">Menu</Heading>
       <Menu rounded>
         <Menu.Item>Unstyled</Menu.Item>
         <Menu.Item>Docs</Menu.Item>
         <Menu.Item>About</Menu.Item>
       </Menu>
-      <Header>Message</Header>
+      <Heading as="h2">Message</Heading>
       <Message>
         <Message.Header>This is a message</Message.Header>
         <Message.Text>This is a description of the message</Message.Text>

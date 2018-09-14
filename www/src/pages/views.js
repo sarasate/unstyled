@@ -1,13 +1,12 @@
 import React from 'react'
 import Layout from 'components/layout.js'
 import { Header } from 'unstyled'
-import { Card, Item } from '../../../src/views'
-import { Heading, Image, Input, Link, Text } from 'unstyled'
+import { Card, Item, Heading, Image } from 'unstyled'
 
 const ViewsPage = props => {
   return (
     <Layout>
-      <h1>Views</h1>
+      <Heading>Views</Heading>
       <Header>
         Complex elements which can be used standalone or in lists like Card or
         Items
