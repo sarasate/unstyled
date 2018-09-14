@@ -3,24 +3,26 @@ import styled from 'styled-components'
 import DefaultTheme from '../themes/DefaultTheme'
 
 /**
- * Button component
+ * Button component. This renders a html `button`, not an `input` with type `submit` as `button` is more flexible.
  * HTML: `button`
  * @type {StyledComponentClass<JSX.IntrinsicElements["button"], any, JSX.IntrinsicElements["button"]>}
  */
 const Button = styled.button`
   background-color: white;
-  border: 2px solid ${({ theme }) => theme.primaryColor};
+  border: 2px solid
+    ${props => (props.color ? props.color : props.theme.primaryColor)};
+  cursor: pointer;
   border-radius: ${({ rounded }) => (rounded ? '.15rem' : 0)};
   display: inline-block;
-  color: ${({ theme }) => theme.primaryColor};
+  color: ${props => (props.color ? props.color : props.theme.primaryColor)};
   cursor: pointer;
   font-family: ${props => props.theme.fontFamily};
-  font-size: 1.1em;
+  font-size: 1em;
   font-style: normal;
   line-height: 1em;
-  margin: 0 0.25em 0 0;
+  margin: 1.5px;
   min-height: 1em;
-  padding: 0.6875em 1.5em 0.6875em;
+  padding: 0.6875em 1.5em;
   text-align: center;
   text-decoration: none;
   vertical-align: baseline;

@@ -1,10 +1,14 @@
 import React from 'react'
 import Layout from 'components/layout.js'
-import { Header, Heading, Text } from 'unstyled'
+import { Button, Header, Heading, Text } from 'unstyled'
 
 const CorePage = props => {
   return (
     <Layout>
+      <Heading as="h2">Button</Heading>
+      <Button>Button</Button>
+      <Button rounded>Rounded Button</Button>
+      <Button color="palevioletred">Rounded Button</Button>
       <Header>
         Basic elements to implement standard HTML tags as React components.
       </Header>
@@ -15,7 +19,6 @@ const CorePage = props => {
       <Heading as="h4">Heading 4</Heading>
       <Heading as="h5">Heading 5</Heading>
       <Heading as="h6">Heading 6</Heading>
-
       <Text />
       <div />
     </Layout>
