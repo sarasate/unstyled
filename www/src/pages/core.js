@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from 'components/layout.js'
-import { Button, Header, Heading, Text } from 'unstyled'
+import { Button, Header, Heading, Image, Text } from 'unstyled'
 
 const CorePage = props => {
   return (
@@ -19,8 +19,12 @@ const CorePage = props => {
       <Heading as="h4">Heading 4</Heading>
       <Heading as="h5">Heading 5</Heading>
       <Heading as="h6">Heading 6</Heading>
-      <Text />
-      <div />
+      {/* Image */}
+      <Header>Image</Header>
+      <Image
+        src="https://react.semantic-ui.com/images/wireframe/image.png"
+        style={{ width: 200 }}
+      />
     </Layout>
   )
 }
