@@ -8,7 +8,7 @@ const CorePage = props => {
       <Heading as="h2">Button</Heading>
       <Button>Button</Button>
       <Button rounded>Rounded Button</Button>
-      <Button color="palevioletred">Rounded Button</Button>
+      <Button color="palevioletred">Button</Button>
       <Header>
         Basic elements to implement standard HTML tags as React components.
       </Header>
