@@ -1,3 +1,4 @@
+// TODO use named imports
 export { default as Button } from './Button'
 export { default as Code } from './Code'
 export { default as Heading } from './Heading'
@@ -5,5 +6,6 @@ export { default as Image } from './Image'
 export { default as Input } from './Input'
 export { default as Label } from './Label'
 export { default as Link } from './Link'
+export { default as Span } from './Span'
 export { default as Text } from './Text'
 export { default as View } from './View'

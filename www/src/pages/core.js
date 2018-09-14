@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from 'components/layout.js'
-import { Button, Header, Heading, Image } from 'unstyled'
+import { Button, Header, Heading, Image, Span, Text } from 'unstyled'
 
 const CorePage = props => {
   return (
@@ -27,6 +27,9 @@ const CorePage = props => {
         src="https://react.semantic-ui.com/images/wireframe/image.png"
         style={{ width: 200 }}
       />
+      <Text>
+        This is text with a <Span color="green">Span</Span> element.
+      </Text>
     </Layout>
   )
 }
