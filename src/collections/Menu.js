@@ -34,7 +34,7 @@ export const Menu = styled.div`
   display: flex;
   border: ${props => (props.borderless ? 0 : '1px')} solid
     ${({ theme }) => theme.grey};
-  border-radius: ${({ rounded }) => (rounded ? '0.25rem' : 0)};
+  border-radius: ${({ rounded }) => (rounded ? '0.15rem' : 0)};
   margin: 1rem 0;
   min-height: 2.875em;
   //-webkit-box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.22) inset,
