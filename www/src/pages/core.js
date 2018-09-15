@@ -1,6 +1,15 @@
 import React from 'react'
 import Layout from 'components/layout.js'
-import { Button, Header, Heading, Image, Span, Text } from 'unstyled'
+import {
+  Button,
+  Code,
+  Header,
+  Heading,
+  Image,
+  Span,
+  Table,
+  Text,
+} from 'unstyled'
 
 const CorePage = props => {
   return (
@@ -27,6 +36,38 @@ const CorePage = props => {
         src="https://react.semantic-ui.com/images/wireframe/image.png"
         style={{ width: 200 }}
       />
+
+      <Heading>Table</Heading>
+      <Table rounded>
+        <Table.Header>
+          <Table.Row>
+            <Table.Heading>1. Heading</Table.Heading>
+            <Table.Heading>2. Heading</Table.Heading>
+            <Table.Heading>3. Heading</Table.Heading>
+          </Table.Row>
+        </Table.Header>
+        <Table.Body>
+          <Table.Row>
+            <Table.Cell>1. Cell</Table.Cell>
+            <Table.Cell>2. Cell</Table.Cell>
+            <Table.Cell>3. Cell</Table.Cell>
+          </Table.Row>
+        </Table.Body>
+        <Table.Footer>
+          <Table.Row>
+            <Table.Cell>1. Footer Cell</Table.Cell>
+            <Table.Cell>2. Footer Cell</Table.Cell>
+            <Table.Cell>3. Footer Cell</Table.Cell>
+          </Table.Row>
+        </Table.Footer>
+      </Table>
+
+      <Heading>Text</Heading>
+      <Text>
+        This is a <Code>Text</Code> element (p).
+      </Text>
+
+      <Heading>Span</Heading>
       <Text>
         This is text with a <Span color="green">Span</Span> element.
       </Text>
