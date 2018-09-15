@@ -1,6 +1,14 @@
 import React from 'react'
 import Layout from 'components/layout.js'
-import { Badge, Header, Heading, Label, Loader, Segment } from 'unstyled'
+import {
+  Badge,
+  Dropdown,
+  Header,
+  Heading,
+  Label,
+  Loader,
+  Segment,
+} from 'unstyled'
 const ElementsPage = props => {
   return (
     <Layout>
@@ -9,6 +17,16 @@ const ElementsPage = props => {
       {/* Badge */}
       <Heading as="h2">Badge</Heading>
       <Badge>Badge</Badge>
+
+      <Heading>Dropdown</Heading>
+      <Dropdown>
+        <Dropdown.Header>Dropdown</Dropdown.Header>
+        <Dropdown.Menu rounded>
+          <Dropdown.Item>1. Dropdown Item</Dropdown.Item>
+          <Dropdown.Item>2. Dropdown Item</Dropdown.Item>
+          <Dropdown.Item>3. Dropdown Item</Dropdown.Item>
+        </Dropdown.Menu>
+      </Dropdown>
 
       {/* Label */}
       <Heading as="h2">Label</Heading>

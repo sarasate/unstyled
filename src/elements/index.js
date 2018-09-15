@@ -1,5 +1,6 @@
 export { Badge } from './Badge'
 export { Container } from './Container'
+export { Dropdown } from './Dropdown'
 export { Header } from './Header'
 export { Loader } from './Loader'
 export { NavBar } from './NavBar'
