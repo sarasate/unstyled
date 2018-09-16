@@ -1,5 +1,6 @@
 import React from 'react'
-import Layout from 'components/layout.js'
+import Helmet from 'react-helmet'
+import Layout from 'components/layout'
 import {
   Button,
   Code,
@@ -14,6 +15,16 @@ import {
 const CorePage = props => {
   return (
     <Layout>
+      <Helmet
+        title="Core"
+        meta={[
+          {
+            name: 'description',
+            content:
+              'Basic elements to implement standard HTML tags as React components.',
+          },
+        ]}
+      />
       <Heading>Core</Heading>
       <Header>
         Basic elements to implement standard HTML tags as React components.

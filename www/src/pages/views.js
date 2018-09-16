@@ -1,4 +1,5 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 import Layout from 'components/layout.js'
 import { Header } from 'unstyled'
 import { Card, Item, Heading, Image } from 'unstyled'
@@ -6,6 +7,16 @@ import { Card, Item, Heading, Image } from 'unstyled'
 const ViewsPage = props => {
   return (
     <Layout>
+      <Helmet
+        title="Views"
+        meta={[
+          {
+            name: 'description',
+            content:
+              'Complex elements which can be used standalone or in lists like Card or Items.',
+          },
+        ]}
+      />
       <Heading>Views</Heading>
       <Header>
         Complex elements which can be used standalone or in lists like Card or

@@ -13,6 +13,7 @@ const Layout = ({ children }) => (
         site {
           siteMetadata {
             title
+            description
           }
         }
       }
@@ -20,10 +21,14 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         <Helmet
-          title={data.site.siteMetadata.title}
+          titleTemplate="%s | Unstyled"
+          defaultTitle="Unstyled"
           meta={[
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
+            {
+              name: 'description',
+              content: data.site.siteMetadata.description,
+            },
+            { name: 'keywords', content: 'unstyled,react,ui,style' },
           ]}
         >
           <html lang="en" />

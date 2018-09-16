@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from 'components/layout.js'
+import Helmet from 'react-helmet'
 import {
   Badge,
   Dropdown,
@@ -12,6 +13,15 @@ import {
 const ElementsPage = props => {
   return (
     <Layout>
+      <Helmet
+        title="Elements"
+        meta={[
+          {
+            name: 'description',
+            content: 'Single elements like Badges, Segments or Labels.',
+          },
+        ]}
+      />
       <Heading>Elements</Heading>
       <Header>Single elements like Badges, Segments or Labels</Header>
       {/* Badge */}

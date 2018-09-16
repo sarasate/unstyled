@@ -1,4 +1,5 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 import Layout from 'components/layout.js'
 import { Header } from 'unstyled'
 import { Heading, Grid, Menu, Message } from 'unstyled'
@@ -6,6 +7,15 @@ import { Heading, Grid, Menu, Message } from 'unstyled'
 const CollectionsPage = props => {
   return (
     <Layout>
+      <Helmet
+        title="Collections"
+        meta={[
+          {
+            name: 'description',
+            content: 'Aggregated elements like forms, menus and tables.',
+          },
+        ]}
+      />
       <Heading>Collections</Heading>
       <Header>Aggregated elements like forms, menus and tables</Header>
       <Heading as="h2">Grid</Heading>

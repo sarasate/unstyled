@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Unstyled',
+    description: 'Minimal UI for the component age.',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
