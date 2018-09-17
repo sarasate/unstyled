@@ -28,7 +28,7 @@ const ElementsPage = props => {
       <Heading as="h2">Badge</Heading>
       <Badge>Badge</Badge>
 
-      <Heading>Dropdown</Heading>
+      <Heading>Dropdown (CSS only)</Heading>
       <Dropdown>
         <Dropdown.Header>Dropdown</Dropdown.Header>
         <Dropdown.Menu rounded>
