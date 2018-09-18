@@ -1,3 +1,4 @@
+import React from 'react'
 import styled from 'styled-components'
 import DefaultTheme from '../themes/DefaultTheme'
 
@@ -30,6 +31,14 @@ const Heading = styled.h1`
   font-weight: ${props => props.theme.headingFontWeight};
 `
 
+const Element = props => {
+  return (
+    <Heading as={`h${props.level || 1}`} {...props}>
+      {props.children}
+    </Heading>
+  )
+}
+
 Heading.defaultProps = { theme: DefaultTheme }
 
-export default Heading
+export default Element

@@ -34,13 +34,13 @@ const CorePage = props => {
       <Button rounded>Rounded Button</Button>
       <Button color="palevioletred">Button</Button>
 
-      <Heading as="h2">Headings</Heading>
-      <Heading as="h1">Heading 1</Heading>
-      <Heading as="h2">Heading 2</Heading>
-      <Heading as="h3">Heading 3</Heading>
-      <Heading as="h4">Heading 4</Heading>
-      <Heading as="h5">Heading 5</Heading>
-      <Heading as="h6">Heading 6</Heading>
+      <Heading>Headings</Heading>
+      <Heading level={1}>Heading 1</Heading>
+      <Heading level={2}>Heading 2</Heading>
+      <Heading level={3}>Heading 3</Heading>
+      <Heading level={4}>Heading 4</Heading>
+      <Heading level={5}>Heading 5</Heading>
+      <Heading level={6}>Heading 6</Heading>
       {/* Image */}
       <Heading as="h2">Image</Heading>
       <Image
