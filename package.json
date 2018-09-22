@@ -1,7 +1,7 @@
 {
   "name": "unstyled",
   "description": "React components with minimal styling, easily to extend. Based on styled-components.",
-  "version": "0.0.23",
+  "version": "0.0.24",
   "main": "dist/unstyled.cjs.js",
   "module": "dist/unstyled.cjs.js",
   "author": "sarasate",
