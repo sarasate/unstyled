@@ -1,6 +1,6 @@
 # unstyled
 
-React components with minimal styling, easily to extend. Based on styled-components. Inspired by semantic-ui. Will cover all common used html tags and adding convenient components for widely used UI elements.  
+React components with minimal styling, easily to extend. Based on styled-components. Inspired by React Native components and SemanticUI. Will cover all common used html tags and adding convenient components for widely used UI elements.  
 
 WIP: This package is in an early alpha stage. Breaking changes can occur without notification. Already used in production (caution!). Feedback and contributions are welcome.
 
