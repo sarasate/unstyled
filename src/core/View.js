@@ -6,7 +6,7 @@ import DefaultTheme from '../themes/DefaultTheme'
  * HTML: `div`
  * @type {StyledComponentClass<JSX.IntrinsicElements["p"], any, JSX.IntrinsicElements["p"]>}
  */
-const View = styled.p`
+const View = styled.div`
   font-size: 1rem;
   font-family: ${props => props.theme.fontFamily};
   text-align: ${props => (props.centered ? 'center' : 'left')};
