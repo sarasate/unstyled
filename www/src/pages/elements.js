@@ -8,6 +8,7 @@ import {
   Heading,
   Label,
   Loader,
+  Pagination,
   Segment,
 } from 'unstyled'
 const ElementsPage = props => {
@@ -25,7 +26,7 @@ const ElementsPage = props => {
       <Heading>Elements</Heading>
       <Header>Single elements like Badges, Segments or Labels</Header>
       {/* Badge */}
-      <Heading as="h2">Badge</Heading>
+      <Heading level={2}>Badge</Heading>
       <Badge>Badge</Badge>
 
       <Heading as="h2">Dropdown (CSS only)</Heading>
@@ -54,6 +55,15 @@ const ElementsPage = props => {
       >
         <Loader />
       </Segment>
+
+      {/* Pagination */}
+      <Heading level={2}>Pagination</Heading>
+      <Pagination>
+        <Pagination.Item>Previous</Pagination.Item>
+        <Pagination.Item>1</Pagination.Item>
+        <Pagination.Item>2</Pagination.Item>
+        <Pagination.Item>Next</Pagination.Item>
+      </Pagination>
 
       {/*Segment*/}
       <Heading as="h2">Segment</Heading>
