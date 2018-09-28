@@ -7,6 +7,7 @@ import {
   Header,
   Heading,
   Image,
+  List,
   Span,
   Table,
   Text,
@@ -48,6 +49,25 @@ const CorePage = props => {
         style={{ width: 200 }}
       />
 
+      <Heading>List</Heading>
+      <List>
+        <List.Item>This</List.Item>
+        <List.Item>is an </List.Item>
+        <List.Item>unordered</List.Item>
+        <List.Item>List</List.Item>
+      </List>
+      <List ordered>
+        <List.Item>This</List.Item>
+        <List.Item>is an </List.Item>
+        <List.Item>ordered</List.Item>
+        <List.Item>List</List.Item>
+      </List>
+
+      <Heading>Span</Heading>
+      <Text>
+        This is text with a <Span color="green">Span</Span> element.
+      </Text>
+
       <Heading>Table</Heading>
       <Table rounded>
         <Table.Header>
@@ -76,11 +96,6 @@ const CorePage = props => {
       <Heading>Text</Heading>
       <Text>
         This is a <Code>Text</Code> element (p).
-      </Text>
-
-      <Heading>Span</Heading>
-      <Text>
-        This is text with a <Span color="green">Span</Span> element.
       </Text>
     </Layout>
   )
