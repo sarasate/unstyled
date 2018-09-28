@@ -19,11 +19,11 @@ const IndexPage = () => [
     <FlexContainer>
       <MainMenu />
       <Heading color="white">
-        Minimal UI components for the component age.
+        Minimal UI components for the component age
       </Heading>
       <Heading color="white" as="h2">
         Extendable UI components with the least opinionated style. Based on
-        styled-components.
+        styled-components
       </Heading>
     </FlexContainer>
   </Head>,
