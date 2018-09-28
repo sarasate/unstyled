@@ -34,6 +34,11 @@ const CollectionsPage = props => {
         <Menu.Item>Docs</Menu.Item>
         <Menu.Item>About</Menu.Item>
       </Menu>
+      <Menu rounded vertical>
+        <Menu.Item>Unstyled</Menu.Item>
+        <Menu.Item>Docs</Menu.Item>
+        <Menu.Item>About</Menu.Item>
+      </Menu>
       <Heading as="h2">Message</Heading>
       <Message>
         <Message.Header>This is a message</Message.Header>

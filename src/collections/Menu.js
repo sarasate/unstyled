@@ -35,14 +35,17 @@ export const Menu = styled.div`
   border: ${props => (props.borderless ? 0 : '1px')} solid
     ${({ theme }) => theme.grey};
   border-radius: ${({ rounded }) => (rounded ? '0.15rem' : 0)};
+  flex-direction: ${props => (props.vertical ? 'column' : 'row')};
   margin: 1rem 0;
   min-height: 2.875em;
+  width: ${props => (props.vertical ? '15rem' : 'auto')};
   //-webkit-box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.22) inset,
   //  0px 0px 0px 0px rgba(0, 0, 0, 0);
   //box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.22) inset,
   //  0px 0px 0px 0px rgba(0, 0, 0, 0);
   ${Item} {
     color: ${props => props.color || 'black'};
+    display: ${props => (props.vertical ? 'block' : 'inline')};
     border-width: ${props => (props.borderless ? 0 : '1px')};
   }
 
