@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Unstyled',
+    siteUrl: 'https://www.unstyled.io',
     description: 'Minimal UI for the component age.',
   },
   plugins: [
@@ -19,5 +20,6 @@ module.exports = {
     },
     'gatsby-plugin-offline',
     'gatsby-plugin-styled-components',
+    'gatsby-plugin-sitemap',
   ],
 }
