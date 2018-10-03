@@ -2,7 +2,7 @@ import { PropTypes } from 'prop-types'
 import styled from 'styled-components'
 import DefaultTheme from '../themes/DefaultTheme'
 
-const Item = styled.a`
+const MenuItem = styled.a`
   align-items: center;
   border-right: 1px solid rgba(34, 36, 38, 0.22);
   color: ${({ theme }) => theme.black};
@@ -43,7 +43,7 @@ export const Menu = styled.div`
   //  0px 0px 0px 0px rgba(0, 0, 0, 0);
   //box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.22) inset,
   //  0px 0px 0px 0px rgba(0, 0, 0, 0);
-  ${Item} {
+  ${MenuItem} {
     border-width: ${props => (props.borderless ? 0 : '1px')};
     color: ${props => props.color || 'black'};
     display: ${props => (props.vertical ? 'block' : 'inline')};
@@ -61,10 +61,13 @@ export const Menu = styled.div`
 Menu.propTypes = {
   rounded: PropTypes.bool,
 }
+MenuItem.propTypes = {
+  bold: PropTypes.bool,
+}
 
 Menu.defaultProps = { theme: DefaultTheme }
-Item.defaultProps = { theme: DefaultTheme }
+MenuItem.defaultProps = { theme: DefaultTheme }
 
-Menu.Item = Item
+Menu.Item = MenuItem
 
 export default Menu

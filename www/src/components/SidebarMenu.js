@@ -4,22 +4,25 @@ import { Menu, Sidebar } from 'unstyled'
 
 const SidebarMenu = () => (
   <Sidebar as={Menu} vertical>
-    <Menu.Item as={Link} to="/">
+    <Menu.Item as={Link} to="/" color="rebeccapurple">
       Unstyled
     </Menu.Item>
     {Object.entries(menuItems).map(entry => {
       return (
-        <>
-          <Menu.Item bold>{entry[0]}</Menu.Item>
+        <div key={entry[0]}>
+          <Menu.Item bold key={entry[0]}>
+            {entry[0]}
+          </Menu.Item>
           {entry[1].map(item => (
             <Menu.Item
+              key={item}
               as={Link}
               to={`/${entry[0].toLowerCase()}/${item.toLowerCase()}`}
             >
               {item}
             </Menu.Item>
           ))}
-        </>
+        </div>
       )
     })}
     <Menu.Item level={2} bold>
