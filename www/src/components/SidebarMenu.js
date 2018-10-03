@@ -25,9 +25,6 @@ const SidebarMenu = () => (
         </div>
       )
     })}
-    <Menu.Item level={2} bold>
-      Core
-    </Menu.Item>
   </Sidebar>
 )
 
