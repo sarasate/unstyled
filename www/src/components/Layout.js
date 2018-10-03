@@ -1,9 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import { StaticQuery, graphql } from 'gatsby'
+import { Link, StaticQuery, graphql } from 'gatsby'
+import { Heading, Sidebar, Menu } from 'unstyled'
 
-import Header from './header'
+import Header from './Header'
 import './layout.css'
 
 const Layout = ({ children }) => (
@@ -33,17 +34,18 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <div
-          style={{
-            margin: '0 auto',
-            maxWidth: 960,
-            padding: '0px 1.0875rem 1.45rem',
-            paddingTop: 0,
-          }}
-        >
-          {children}
-        </div>
+        <Sidebar as={Menu} vertical>
+          <Menu.Item as={Link} to="/">
+            Unstyled
+          </Menu.Item>
+          <Menu.Item as={Heading} level={2}>
+            Core
+          </Menu.Item>
+          <Menu.Item as={Link} to="/core/button">
+            Button
+          </Menu.Item>
+        </Sidebar>
+        <div style={{ marginLeft: 250, padding: '1rem' }}>{children}</div>
       </>
     )}
   />
