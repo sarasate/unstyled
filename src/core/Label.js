@@ -3,6 +3,7 @@ import DefaultTheme from '../themes/DefaultTheme'
 
 /**
  * A Basic Label representing a HTML form label.
+ * TODO refactor Label as Form.Label and use this as general label component
  */
 const Label = styled.label`
   border: none;
