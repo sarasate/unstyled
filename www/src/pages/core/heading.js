@@ -1,9 +1,11 @@
 import React from 'react'
 import Layout from 'components/Layout.js'
 import { Button, Code, Heading, Text } from 'unstyled'
+import Meta from '../../components/Meta'
 
 const HeadingPage = () => (
   <Layout>
+    <Meta data={{ name: 'Heading', description: 'Heading component' }} />
     <Heading>Headings</Heading>
     <Heading level={1}>Heading 1</Heading>
     <Heading level={2}>Heading 2</Heading>

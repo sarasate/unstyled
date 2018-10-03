@@ -4,6 +4,7 @@ import { Heading, Text, Loader, Segment } from 'unstyled'
 
 const LoaderPage = () => (
   <Layout>
+    <Meta data={{ name: 'Loader', description: 'Loader component' }} />
     <Heading as="h2">Loader</Heading>
     <Segment
       style={{

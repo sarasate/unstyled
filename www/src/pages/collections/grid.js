@@ -1,9 +1,11 @@
 import React from 'react'
 import Layout from 'components/Layout.js'
 import { Heading, Text, Grid } from 'unstyled'
+import Meta from '../../components/Meta'
 
 const GridPage = () => (
   <Layout>
+    <Meta data={{ name: 'Grid', description: 'Grid component' }} />
     <Heading>Grid</Heading>
     <Grid columns={3}>
       <Grid.Column>Column 1</Grid.Column>

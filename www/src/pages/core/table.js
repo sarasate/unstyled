@@ -1,9 +1,11 @@
 import React from 'react'
 import Layout from 'components/Layout.js'
 import { Heading, Table, Text } from 'unstyled'
+import Meta from '../../components/Meta'
 
 const TablePage = () => (
   <Layout>
+    <Meta data={{ name: 'Table', description: 'Table component' }} />
     <Heading>Table</Heading>
     <Table rounded>
       <Table.Header>

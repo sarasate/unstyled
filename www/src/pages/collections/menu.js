@@ -1,9 +1,11 @@
 import React from 'react'
 import Layout from 'components/Layout.js'
 import { Heading, Text, Menu } from 'unstyled'
+import Meta from '../../components/Meta'
 
 const MenuPage = () => (
   <Layout>
+    <Meta data={{ name: 'Menu', description: 'Menu component' }} />
     <Heading>Menu</Heading>
     <Menu rounded>
       <Menu.Item>Unstyled</Menu.Item>

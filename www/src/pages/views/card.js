@@ -1,9 +1,11 @@
 import React from 'react'
 import Layout from 'components/Layout.js'
 import { Heading, Text, Card, Image } from 'unstyled'
+import Meta from '../../components/Meta'
 
 const CardPage = () => (
   <Layout>
+    <Meta data={{ name: 'Card', description: 'Card component' }} />
     <Heading as="h2">Card</Heading>
     <Card>
       <Image src="https://react.semantic-ui.com/images/wireframe/image.png" />

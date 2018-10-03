@@ -1,9 +1,11 @@
 import React from 'react'
 import Layout from 'components/Layout.js'
 import { Heading, Text, Item } from 'unstyled'
+import Meta from '../../components/Meta'
 
 const ItemPage = () => (
   <Layout>
+    <Meta data={{ name: 'Item', description: 'Item component' }} />
     <Heading as="h2">Item</Heading>
     <Item>
       <Item.Content>

@@ -1,9 +1,11 @@
 import React from 'react'
 import Layout from 'components/Layout.js'
 import { Heading, Text, Message } from 'unstyled'
+import Meta from '../../components/Meta'
 
 const MessagePage = () => (
   <Layout>
+    <Meta data={{ name: 'Message', description: 'Message component' }} />
     <Heading>Message</Heading>
     <Message>
       <Message.Header>This is a message</Message.Header>
