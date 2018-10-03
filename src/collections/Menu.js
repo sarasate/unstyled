@@ -11,7 +11,7 @@ const Item = styled.a`
   display: -ms-flexbox;
   display: flex;
   font-family: ${props => props.theme.fontFamily};
-  font-weight: normal;
+  font-weight: ${props => (props.bold ? '600' : '400')};
   line-height: 1;
   padding: 0.9375em 1.125em;
   position: relative;
@@ -44,9 +44,9 @@ export const Menu = styled.div`
   //box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.22) inset,
   //  0px 0px 0px 0px rgba(0, 0, 0, 0);
   ${Item} {
+    border-width: ${props => (props.borderless ? 0 : '1px')};
     color: ${props => props.color || 'black'};
     display: ${props => (props.vertical ? 'block' : 'inline')};
-    border-width: ${props => (props.borderless ? 0 : '1px')};
   }
 
   &:first-child {
