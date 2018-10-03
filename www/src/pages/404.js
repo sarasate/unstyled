@@ -1,10 +1,11 @@
 import React from 'react'
 import Layout from '../components/layout'
+import { Heading, Text } from 'unstyled'
 
 const NotFoundPage = () => (
   <Layout>
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <Heading>NOT FOUND</Heading>
+    <Text>You just hit a route that doesn&#39;t exist... the sadness.</Text>
   </Layout>
 )
 
