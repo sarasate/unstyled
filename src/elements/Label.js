@@ -5,7 +5,7 @@ import DefaultTheme from '../themes/DefaultTheme'
  * A Basic Label representing a HTML form label.
  * TODO refactor Label as Form.Label and use this as general label component
  */
-const Label = styled.span`
+export const Label = styled.span`
   background-color: ${props =>
     props.color ? props.color : props.theme.secondaryColor};
   border: none;
