@@ -7,7 +7,9 @@ const BadgePage = () => (
   <Layout>
     <Meta data={{ name: 'Badge', description: 'Badge component' }} />
     <Heading level={2}>Badge</Heading>
-    <Badge>Badge</Badge>
+    <Badge>1</Badge>
+    <Badge color="green">2</Badge>
+    <Badge color="red">3</Badge>
   </Layout>
 )
 

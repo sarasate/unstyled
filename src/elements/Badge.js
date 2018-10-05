@@ -2,13 +2,14 @@ import styled from 'styled-components'
 import DefaultTheme from '../themes/DefaultTheme'
 
 /**
- * A Basic Label representing a HTML form label.
+ * A Badge displays a highlighted number.
+ * TODO add chroma.js lib to get inverted colors
  */
 export const Badge = styled.span`
   background-color: ${({ theme }) => theme.secondaryColor};
   border: none;
   border-radius: 0.125em;
-  color: ${({ theme }) => theme.primaryColor};
+  color: ${props => (props.color ? props.color : props.theme.primaryColor)};
   display: inline-block;
   font-family: ${props => props.theme.fontFamily};
   font-size: 1em;
