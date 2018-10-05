@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from 'components/Layout.js'
-import { Button, Code, Heading, Text } from 'unstyled'
+import { Code, Heading, Text } from 'unstyled'
 import Meta from '../../components/Meta'
 
 const CodePage = () => (

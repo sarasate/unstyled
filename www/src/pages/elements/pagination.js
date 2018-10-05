@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from 'components/Layout.js'
-import { Heading, Text, Pagination } from 'unstyled'
+import { Heading, Pagination } from 'unstyled'
 
 const PaginationPage = () => (
   <Layout>

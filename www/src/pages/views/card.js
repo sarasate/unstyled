@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from 'components/Layout.js'
-import { Heading, Text, Card, Image } from 'unstyled'
+import { Heading, Card, Image } from 'unstyled'
 import Meta from '../../components/Meta'
 
 const CardPage = () => (

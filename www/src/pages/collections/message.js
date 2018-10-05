@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from 'components/Layout.js'
-import { Heading, Text, Message } from 'unstyled'
+import { Heading, Message } from 'unstyled'
 import Meta from '../../components/Meta'
 
 const MessagePage = () => (

@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from 'components/Layout.js'
-import { Heading, List, Text } from 'unstyled'
+import { Heading, List } from 'unstyled'
 import Meta from '../../components/Meta'
 
 const ListPage = () => (

@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from 'components/Layout.js'
-import { Badge, Heading, Text } from 'unstyled'
+import { Badge, Heading } from 'unstyled'
 import Meta from '../../components/Meta'
 
 const BadgePage = () => (

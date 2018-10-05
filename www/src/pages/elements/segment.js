@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from 'components/Layout.js'
-import { Heading, Text, Segment } from 'unstyled'
+import { Heading, Segment } from 'unstyled'
 
 const SegmentPage = () => (
   <Layout>

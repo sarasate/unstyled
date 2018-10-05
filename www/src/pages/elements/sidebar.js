@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from 'components/Layout.js'
-import { Button, Heading, Text } from 'unstyled'
+import { Heading, Text } from 'unstyled'
 
 const SidebarPage = () => (
   <Layout>

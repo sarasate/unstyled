@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from 'components/Layout.js'
-import { Heading, Text, Grid } from 'unstyled'
+import { Heading, Grid } from 'unstyled'
 import Meta from '../../components/Meta'
 
 const GridPage = () => (

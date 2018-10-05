@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from 'components/Layout.js'
-import { Heading, Text, Item } from 'unstyled'
+import { Heading, Item } from 'unstyled'
 import Meta from '../../components/Meta'
 
 const ItemPage = () => (

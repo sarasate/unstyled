@@ -1,6 +1,7 @@
 import React from 'react'
 import Layout from 'components/Layout.js'
-import { Heading, Text, Loader, Segment } from 'unstyled'
+import { Heading, Loader, Segment } from 'unstyled'
+import Meta from '../../components/Meta'
 
 const LoaderPage = () => (
   <Layout>

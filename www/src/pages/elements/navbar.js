@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from 'components/Layout.js'
-import { Heading, Text, Dropdown } from 'unstyled'
+import { Heading, Text } from 'unstyled'
 
 const NavbarPage = () => (
   <Layout>

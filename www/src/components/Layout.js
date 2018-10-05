@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
-import { Heading, Sidebar, Menu } from 'unstyled'
 import SidebarMenu from './SidebarMenu'
 
 import './layout.css'
