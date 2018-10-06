@@ -1,7 +1,9 @@
 /* Basic theme with minimal styling. Nearly unstyled.*/
+import 'typeface-open-sans'
+
 const DefaultTheme = {
   fontFamily:
-    'Futura PT,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Arial,sans-serif',
+    'Open Sans,-apple-system,BlinkMacSystemFont,Source Sans Pro,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Arial,sans-serif',
   fontWeight: 400,
   fontColor: 'black',
   fontSize: '16px',
