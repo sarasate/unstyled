@@ -5,7 +5,7 @@ const DefaultTheme = {
   fontFamily:
     'Open Sans,-apple-system,BlinkMacSystemFont,Source Sans Pro,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Arial,sans-serif',
   fontWeight: 400,
-  fontColor: 'black',
+  fontColor: 'rgba(0, 0, 0, 0.84)',
   fontSize: '16px',
   headingFontWeight: 600,
   primaryColor: 'rgba(0,0,0,.6)',
