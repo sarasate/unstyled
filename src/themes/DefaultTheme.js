@@ -1,5 +1,5 @@
 /* Basic theme with minimal styling. Nearly unstyled.*/
-import 'typeface-open-sans'
+require('typeface-open-sans')
 
 const DefaultTheme = {
   fontFamily:
