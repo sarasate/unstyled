@@ -9,7 +9,7 @@ import DefaultTheme from '../themes/DefaultTheme'
 const Text = styled.p`
   color: ${props => props.color || props.theme.fontColor};
   font-family: ${props => props.theme.fontFamily};
-  font-size: 1rem;
+  font-size: ${props => props.theme.fontSize};
   line-height: 1.5rem;
 `
 Text.defaultProps = { theme: DefaultTheme }

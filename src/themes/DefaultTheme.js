@@ -6,7 +6,7 @@ const DefaultTheme = {
     'Open Sans,-apple-system,BlinkMacSystemFont,Source Sans Pro,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Arial,sans-serif',
   fontWeight: 400,
   fontColor: 'rgba(0, 0, 0, 0.84)',
-  fontSize: '16px',
+  fontSize: 'inherited',
   headingFontWeight: 600,
   primaryColor: 'rgba(0,0,0,.6)',
   secondaryColor: '#f8f8f9',
