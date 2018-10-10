@@ -2,6 +2,21 @@
 require('typeface-open-sans')
 
 const DefaultTheme = {
+  color: {
+    primary: 'rebeccapurple',
+    secondary: '#8669AE',
+    success: '#1a531b',
+    alert: '#db2828',
+    warning: '#b58105',
+  },
+  typography: {
+    fontColor: 'rgba(0, 0, 0, 0.84)',
+    fontFamily: 'Open Sans,Helvetica,Arial,sans-serif',
+    fontSize: 'inherted',
+    fontWeight: 400,
+    lineHeight: '1rem',
+  },
+  //  @deprecated: These will be used in theme props themselves
   fontFamily:
     'Open Sans,-apple-system,BlinkMacSystemFont,Source Sans Pro,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Arial,sans-serif',
   fontWeight: 400,

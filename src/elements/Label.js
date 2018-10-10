@@ -7,7 +7,7 @@ import DefaultTheme from '../themes/DefaultTheme'
  */
 export const Label = styled.span`
   background-color: ${props =>
-    props.color ? props.color : props.theme.secondaryColor};
+    props.color ? props.theme.color[props.color] : 'inherit'};
   border: none;
   border-radius: 0.125em;
   // TODO solve color/bgColor diff with chroma.js or similar
