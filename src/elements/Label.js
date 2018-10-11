@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import DefaultTheme from '../themes/DefaultTheme'
+import chroma from 'chroma-js'
 
 /**
  * A Basic Label representing a HTML form label.
@@ -10,8 +11,14 @@ export const Label = styled.span`
     props.color ? props.theme.color[props.color] : 'inherit'};
   border: none;
   border-radius: 0.125em;
-  // TODO solve color/bgColor diff with chroma.js or similar
-  color: ${props => (props.color ? 'white' : props.theme.primaryColor)};
+  // Use white font color if contrast between background and standard color i not below 7
+  color: ${props =>
+    chroma.contrast(
+      props.theme.color[props.color] || 'white',
+      props.theme.typography.fontColor
+    ) > 7
+      ? props.theme.typography.fontColor
+      : 'white'};
   display: inline-block;
   font-family: ${props => props.theme.fontFamily};
   font-size: 1em;
