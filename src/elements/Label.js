@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import DefaultTheme from '../themes/DefaultTheme'
-import chroma from 'chroma-js'
+
+const chroma = require('chroma-js')
 
 /**
  * A Basic Label representing a HTML form label.
