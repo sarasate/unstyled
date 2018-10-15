@@ -11,8 +11,11 @@ const ButtonPage = () => (
     <Heading level={2}> A standard button</Heading>
     <Button>Button</Button>
     <Heading level={2}>Customized buttons</Heading>
-    <Button rounded>Rounded Button</Button>
-    <Button color="palevioletred">Button</Button>
+    <Button rounded>Rounded </Button>
+    <Button color="primary" rounded>
+      Primary
+    </Button>
+    <Button color="secondary">Secondary</Button>
   </Layout>
 )
 

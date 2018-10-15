@@ -1,6 +1,7 @@
 import { PropTypes } from 'prop-types'
 import styled from 'styled-components'
-import DefaultTheme from '../themes/DefaultTheme'
+import theme from '../themes/DefaultTheme'
+import chroma from 'chroma-js'
 
 /**
  * Button component. This renders a html `button`, not an `input` with type `submit` as `button` is more flexible.
@@ -8,17 +9,25 @@ import DefaultTheme from '../themes/DefaultTheme'
  * @type {StyledComponentClass<JSX.IntrinsicElements["button"], any, JSX.IntrinsicElements["button"]>}
  */
 const Button = styled.button`
-  background-color: white;
-  border: 2px solid
-    ${props => (props.color ? props.color : props.theme.primaryColor)};
-  cursor: pointer;
+  background-color: ${props =>
+    props.color ? props.theme.color[props.color] : props.theme.grey};
+  //border: 2px solid
+  //   ${props => (props.color ? props.color : props.theme.primaryColor)};
+  border: none;
   border-radius: ${({ rounded }) => (rounded ? '.15rem' : 0)};
-  display: inline-block;
-  color: ${props => (props.color ? props.color : props.theme.primaryColor)};
   cursor: pointer;
+  display: inline-block;
+   color: ${props =>
+     chroma.contrast(
+       props.theme.color[props.color] || 'white',
+       props.theme.typography.fontColor
+     ) > 7
+       ? props.theme.typography.fontColor
+       : 'white'};
   font-family: ${props => props.theme.fontFamily};
   font-size: 1em;
   font-style: normal;
+  font-weight: bold;
   line-height: 1em;
   margin: 1.5px;
   min-height: 1em;
@@ -27,7 +36,11 @@ const Button = styled.button`
   text-decoration: none;
   vertical-align: baseline;
   &:hover {
-    background-color: ${({ theme }) => theme.secondaryColor};
+     background-color: ${props => {
+       return chroma(
+         props.theme.color[props.color] || props.theme.grey
+       ).darken()
+     }};
   }
 `
 
@@ -37,6 +50,6 @@ Button.propTypes = {
 }
 
 // Default Theme
-Button.defaultProps = { theme: DefaultTheme }
+Button.defaultProps = { theme }
 
 export default Button
