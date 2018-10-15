@@ -9,11 +9,12 @@ const LabelPage = () => (
     <Heading>Label</Heading>
     <Text>A `Label` displays highlighted classified content.</Text>
     <Label>Label</Label>
-    <Label color="primary">Label</Label>
-    <Label color="secondary">Label</Label>
-    <Label color="success">Label</Label>
-    <Label color="alert">Label</Label>
-    <Label color="warning">Label</Label>
+    <Label color="primary">Primary</Label>
+    <Label color="secondary">Secondary</Label>
+    <Label color="success">Success</Label>
+    <Label color="alert">Alert</Label>
+    <Label color="warning">Warning</Label>
+    <Label color="info">Info</Label>
   </Layout>
 )
 

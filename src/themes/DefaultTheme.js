@@ -4,10 +4,11 @@ require('typeface-open-sans')
 const DefaultTheme = {
   color: {
     primary: 'rebeccapurple',
-    secondary: '#8669AE',
-    success: '#1a531b',
-    alert: '#db2828',
-    warning: '#b58105',
+    secondary: '#587291',
+    success: '#59B655',
+    alert: '#CA3B33',
+    warning: '#F3BE43',
+    info: '#3E85CA',
   },
   typography: {
     fontColor: 'rgba(0, 0, 0, 0.84)',
@@ -38,7 +39,7 @@ const DefaultTheme = {
   purple: '#A333C8',
   pink: '#E03997',
   brown: '#A5673F',
-  grey: '#767676',
+  grey: '#E8E8E8',
   black: '#1B1C1D',
 }
 
