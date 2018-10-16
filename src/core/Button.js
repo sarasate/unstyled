@@ -1,7 +1,8 @@
 import { PropTypes } from 'prop-types'
 import styled from 'styled-components'
 import theme from '../themes/DefaultTheme'
-import chroma from 'chroma-js'
+
+const chroma = require('chroma-js')
 
 /**
  * Button component. This renders a html `button`, not an `input` with type `submit` as `button` is more flexible.
