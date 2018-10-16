@@ -17,7 +17,7 @@ const SidebarMenu = () => (
             <Menu.Item
               key={item}
               as={Link}
-              to={`/${entry[0].toLowerCase()}/${item.toLowerCase()}`}
+              to={`/${entry[0].toLowerCase()}/${item.toLowerCase()}/`}
             >
               {item}
             </Menu.Item>
