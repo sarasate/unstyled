@@ -14,12 +14,15 @@ export const Label = styled.span`
   border-radius: 0.125em;
   // Use white font color if contrast between background and standard color i not below 7
   color: ${props =>
-    chroma.contrast(
-      props.theme.color[props.color] || 'white',
-      props.theme.typography.fontColor
-    ) > 7
-      ? props.theme.typography.fontColor
-      : 'white'};
+    props.color && chroma(props.theme.color[props.color]).luminance() < 0.5
+      ? 'white'
+      : props.theme.typography.fontColor};
+  // chroma.contrast(
+  //   props.theme.color[props.color] || 'white',
+  //   props.theme.typography.fontColor
+  // ) > 7
+  //   ? props.theme.typography.fontColor
+  //   : 'white'};
   display: inline-block;
   font-family: ${props => props.theme.fontFamily};
   font-size: 1em;
