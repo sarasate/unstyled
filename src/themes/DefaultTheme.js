@@ -13,9 +13,13 @@ const DefaultTheme = {
   typography: {
     fontColor: 'rgba(0, 0, 0, 0.84)',
     fontFamily: 'Open Sans,Helvetica,Arial,sans-serif',
-    fontSize: 'inherted',
+    fontSize: 'inherited',
     fontWeight: 400,
     lineHeight: '1rem',
+  },
+  heading: {
+    fontSize: '1.6rem',
+    fontWeight: 'normal',
   },
   //  @deprecated: These will be used in theme props themselves
   fontFamily:

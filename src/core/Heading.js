@@ -2,32 +2,25 @@ import React from 'react'
 import styled from 'styled-components'
 import DefaultTheme from '../themes/DefaultTheme'
 
-// Quick and dirty fix to get font sizes for headings
-//TODO generate sizes dynamically from base size
-const setFontSize = value => {
-  switch (value) {
-    case 'h2':
-      return '1.4rem'
-    case 'h3':
-      return '1.2rem'
-    case 'h4':
-      return '1rem'
-    case 'h5':
-      return '0.9rem'
-    case 'h6':
-      return '0.8rem'
-    default:
-      return '1.6rem'
+// Set font size for headings
+const setFontSize = (value, size) => {
+  const sizes = {
+    h1: `calc(${size}*1)`,
+    h2: `calc(${size} * 0.9)`,
+    h3: `calc(${size} * 0.8)`,
+    h4: `calc(${size} * 0.7)`,
+    h5: `calc(${size} * 0.6)`,
+    h6: `calc(${size} * 0.5)`,
+    default: `calc(${size}*1)`,
   }
+  return sizes[value] || sizes.default
 }
 
-// TODO Find a solution to provide a `level` via the polymorphism prop `as`
-// of v4
 const Heading = styled.h1`
   color: ${props => (props.color ? props.color : props.theme.fontColor)};
   display: block;
   font-family: ${props => props.theme.fontFamily};
-  font-size: ${props => setFontSize(props.as)};
+  font-size: ${props => setFontSize(props.as, props.theme.heading.fontSize)};
   font-weight: ${props => props.theme.headingFontWeight};
 `
 
