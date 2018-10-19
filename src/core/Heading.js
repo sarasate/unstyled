@@ -21,7 +21,7 @@ const Heading = styled.h1`
   display: block;
   font-family: ${props => props.theme.fontFamily};
   font-size: ${props => setFontSize(props.as, props.theme.heading.fontSize)};
-  font-weight: ${props => props.theme.headingFontWeight};
+  font-weight: ${props => props.theme.heading.fontWeight};
 `
 
 const Element = props => {
