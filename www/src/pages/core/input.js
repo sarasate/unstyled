@@ -8,6 +8,7 @@ const InputPage = () => (
     <Meta data={{ name: 'Input', description: 'Input component' }} />
     <Heading>Input</Heading>
     <Input placeholder="Input Placeholder" />
+    <Input placeholder="Input Placeholder" rounded />
   </Layout>
 )
 
