@@ -3,11 +3,11 @@ import styled from 'styled-components'
 import theme from '../themes/DefaultTheme'
 
 export const List = styled.ul`
-  font-family: ${props => props.theme.fontFamily};
+  font-family: ${props => props.theme.typography.fontFamily};
 `
 
 export const ListItem = styled.li`
-  font-family: ${props => props.theme.fontFamily};
+  font-family: ${props => props.theme.typography.fontFamily};
 `
 
 const Element = props => (

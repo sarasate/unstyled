@@ -3,7 +3,7 @@ import theme from '../themes/DefaultTheme'
 
 export const DropdownMenu = styled.div`
   background-color: white;
-  border: 1px solid ${props => props.theme.grey};
+  border: 1px solid ${props => props.theme.color.grey};
   border-radius: ${props => (props.rounded ? '0.15rem' : null)};
   display: block;
   margin-top: 0.5rem;
@@ -15,18 +15,18 @@ export const DropdownMenu = styled.div`
 `
 
 export const DropdownItem = styled.div`
-  color: ${props => props.color || props.theme.fontColor};
+  color: ${props => props.color || props.theme.typography.fontColor};
   display: inline-block;
-  font-family: ${props => props.fontFamily || props.theme.fontFamily};
+  font-family: ${props => props.fontFamily || props.theme.typography.fontFamily};
   padding: 0.5rem;
   white-space: nowrap;
 `
 
 export const DropdownHeader = styled.div.attrs({ tabIndex: 0 })`
-  color: ${props => props.color || props.theme.fontColor};
+  color: ${props => props.color || props.theme.typography.fontColor};
   cursor: pointer;
   display: inline-block;
-  font-family: ${props => props.fontFamily || props.theme.fontFamily};
+  font-family: ${props => props.fontFamily || props.theme.typography.fontFamily};
   opacity: 1;
   outline: 0;
   visibility: visible;
@@ -44,7 +44,7 @@ export const DropdownHeader = styled.div.attrs({ tabIndex: 0 })`
 
 export const Dropdown = styled.div`
   display: inline-block;
-  font-family: ${props => props.fontFamily || props.theme.fontFamily};
+  font-family: ${props => props.fontFamily || props.theme.typography.fontFamily};
   position: relative;
 `
 

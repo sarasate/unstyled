@@ -3,14 +3,15 @@ import styled from 'styled-components'
 import DefaultTheme from '../themes/DefaultTheme'
 
 export const Sidebar = styled.div`
-  background-color: ${props => (props.inverted ? 'black' : 'white')};
-  border-radius: 0em;
-  color: ${props => (props.inverted ? 'white' : 'black')};
+  background-color: ${props =>
+    props.inverted ? props.theme.color.grey : 'white'};
+  border-radius: 0;
+  color: ${props => (props.inverted ? 'white' : props.theme.color.grey)};
   height: 100%;
   left: 0;
   top: 0;
   max-height: 100%;
-  margin: 0em;
+  margin: 0;
   overflow-y: auto;
   position: fixed;
   width: 250px;

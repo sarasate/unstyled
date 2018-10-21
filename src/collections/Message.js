@@ -9,7 +9,7 @@ export const Message = styled.div`
   background: ${({ theme }) => theme.secondaryColor};
   border-radius: ${({ rounded }) => (rounded ? '0.15rem' : 0)};
   color: ${({ theme, color }) => (color ? theme[color] : theme.primaryColor)};
-  font-family: ${props => props.theme.fontFamily};
+  font-family: ${props => props.theme.typography.fontFamily};
   line-height: 1.4285em;
   min-height: 1em;
   margin: 1em 0em;

@@ -10,7 +10,7 @@ const MenuItem = styled.a`
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: ${props => props.theme.fontFamily};
+  font-family: ${props => props.theme.typography.fontFamily};
   font-weight: ${props => (props.bold ? '600' : '400')};
   line-height: 1;
   padding: 0.9375em 1.125em;

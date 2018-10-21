@@ -8,7 +8,7 @@ import DefaultTheme from '../themes/DefaultTheme'
  */
 const View = styled.div`
   font-size: 1rem;
-  font-family: ${props => props.theme.fontFamily};
+  font-family: ${props => props.theme.typography.fontFamily};
   text-align: ${props => (props.centered ? 'center' : 'left')};
 `
 

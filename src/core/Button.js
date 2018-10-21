@@ -11,7 +11,7 @@ const chroma = require('chroma-js')
  */
 const Button = styled.button`
   background-color: ${props =>
-    props.color ? props.theme.color[props.color] : props.theme.grey};
+    props.color ? props.theme.color[props.color] : props.theme.color.grey};
   //border: 2px solid
   //   ${props => (props.color ? props.color : props.theme.primaryColor)};
   border: none;
@@ -25,7 +25,7 @@ const Button = styled.button`
      ) > 7
        ? props.theme.typography.fontColor
        : 'white'};
-  font-family: ${props => props.theme.fontFamily};
+  font-family: ${props => props.theme.typography.fontFamily};
   font-size: 1em;
   font-style: normal;
   font-weight: bold;
@@ -39,7 +39,7 @@ const Button = styled.button`
   &:hover {
      background-color: ${props => {
        return chroma(
-         props.theme.color[props.color] || props.theme.grey
+         props.theme.color[props.color] || props.theme.color.grey
        ).darken()
      }};
   }

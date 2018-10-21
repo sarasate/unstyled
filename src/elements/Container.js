@@ -7,7 +7,7 @@ import DefaultTheme from '../themes/DefaultTheme'
  */
 export const Container = styled.div`
   display: block;
-  font-family: ${props => props.theme.fontFamily};
+  font-family: ${props => props.theme.typography.fontFamily};
   margin: 0 auto;
   max-width: 960px;
 

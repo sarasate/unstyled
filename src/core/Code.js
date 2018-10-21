@@ -6,8 +6,8 @@ import DefaultTheme from '../themes/DefaultTheme'
  */
 export const Code = styled.code`
   font-size: ${props =>
-    props.fontSize ? props.fontSize : props.theme.fontSize};
-  font-family: ${props => props.theme.codeFont};
+    props.fontSize ? props.fontSize : props.theme.typography.fontSize};
+  font-family: ${props => props.theme.typography.fontFamily};
 `
 
 Code.defaultProps = { theme: DefaultTheme }

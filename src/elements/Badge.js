@@ -9,9 +9,10 @@ export const Badge = styled.span`
   background-color: ${({ theme }) => theme.secondaryColor};
   border: none;
   border-radius: 0.125em;
-  color: ${props => (props.color ? props.color : props.theme.primaryColor)};
+  color: ${props =>
+    props.color ? props.color : props.theme.typography.primaryColor};
   display: inline-block;
-  font-family: ${props => props.theme.fontFamily};
+  font-family: ${props => props.theme.typography.fontFamily};
   font-size: 1em;
   font-style: normal;
   font-weight: bold;

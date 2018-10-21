@@ -6,7 +6,7 @@ import DefaultTheme from '../themes/DefaultTheme'
  */
 const Column = styled.div`
   display: inline-block;
-  font-family: ${props => props.theme.fontFamily};
+  font-family: ${props => props.theme.typography.fontFamily};
   padding-left: 1rem;
   padding-right: 1rem;
   position: relative;

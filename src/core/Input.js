@@ -9,7 +9,7 @@ import DefaultTheme from '../themes/DefaultTheme'
 const Input = styled.input.attrs({
   type: 'text',
 })`
-  font-family: ${props => props.theme.fontFamily};
+  font-family: ${props => props.theme.typography.fontFamily};
   font-size: 1rem;
   line-height: 2rem;
 `

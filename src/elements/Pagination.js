@@ -9,7 +9,7 @@ export const Pagination = styled.ul`
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
-  font-family: ${props => props.theme.fontFamily};
+  font-family: ${props => props.theme.typography.fontFamily};
   list-style: none;
   margin: 0;
   padding-left: 0;

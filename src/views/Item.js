@@ -12,7 +12,7 @@ export const Item = styled.div`
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
-  font-family: ${props => props.theme.fontFamily};
+  font-family: ${props => props.theme.typography.fontFamily};
   margin: 1em 0em;
   min-height: 0px;
   padding: 0em;
@@ -27,7 +27,7 @@ const Content = styled.div`
   border: none;
   box-shadow: none;
   display: block;
-  font-family: ${props => props.theme.fontFamily};
+  font-family: ${props => props.theme.typography.fontFamily};
   flex: 1 1 auto;
   font-size: 1em;
   margin: 0em;
@@ -39,14 +39,14 @@ const Content = styled.div`
 const Header = styled.div`
   color: rgba(0, 0, 0, 0.85);
   display: inline-block;
-  font-family: ${props => props.theme.fontFamily};
+  font-family: ${props => props.theme.typography.fontFamily};
   font-weight: bold;
   margin: -0.21425em 0em 0em;
 `
 
 const Text = styled.div`
   color: rgba(0, 0, 0, 0.87);
-  font-family: ${props => props.theme.fontFamily};
+  font-family: ${props => props.theme.typography.fontFamily};
   font-size: 1em;
   line-height: 1.4285em;
   margin-top: 0.6em;

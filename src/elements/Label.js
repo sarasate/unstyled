@@ -9,7 +9,7 @@ const chroma = require('chroma-js')
  */
 export const Label = styled.span`
   background-color: ${props =>
-    props.color ? props.theme.color[props.color] : props.theme.grey};
+    props.color ? props.theme.color[props.color] : props.theme.color.grey};
   border: none;
   border-radius: 0.125em;
   // Use white font color if contrast between background and standard color i not below 7
@@ -24,7 +24,7 @@ export const Label = styled.span`
   //   ? props.theme.typography.fontColor
   //   : 'white'};
   display: inline-block;
-  font-family: ${props => props.theme.fontFamily};
+  font-family: ${props => props.theme.typography.fontFamily};
   font-size: 1em;
   font-style: normal;
   font-weight: bold;

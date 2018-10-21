@@ -11,8 +11,8 @@ const Link = styled.a.attrs({
   rel: props => (props.external ? 'noopener noreferrer' : null),
   target: props => (props.external ? '_blank' : '_self'),
 })`
-  color: ${props => props.color || props.theme.fontColor};
-  font-family: ${props => props.theme.fontFamily};
+  color: ${props => props.color || props.theme.typography.fontColor};
+  font-family: ${props => props.theme.typography.fontFamily};
   font-size: 1rem;
   text-decoration: ${props => (props.underlined ? 'underline' : 'none')};
 `

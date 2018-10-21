@@ -6,8 +6,8 @@ import DefaultTheme from '../themes/DefaultTheme'
  */
 export const Header = styled.div`
   border: none;
-  color: ${props => props.color || props.theme.fontColor};
-  font-family: ${props => props.theme.fontFamily};
+  color: ${props => props.color || props.theme.typography.fontColor};
+  font-family: ${props => props.theme.typography.fontFamily};
   font-weight: bold;
   line-height: 1.28571429em;
   margin: calc(2rem - 0.14285714em) 0em 1rem;

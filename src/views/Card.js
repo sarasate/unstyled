@@ -10,7 +10,7 @@ export const Card = styled.div`
   border-radius: ${({ rounded }) => (rounded ? '0.25rem' : 0)};
   color: rgba(0, 0, 0, 0.6);
   display: flex;
-  font-family: ${props => props.theme.fontFamily};
+  font-family: ${props => props.theme.typography.fontFamily};
   flex-direction: column;
   flex-wrap: wrap;
   font-size: 1em;
@@ -27,7 +27,7 @@ export const Card = styled.div`
  * Content Wrapper.
  */
 const Content = styled.div`
-  font-family: ${props => props.theme.fontFamily};
+  font-family: ${props => props.theme.typography.fontFamily};
   padding: 0.5833em 0.833em;
 `
 
@@ -37,7 +37,7 @@ const Content = styled.div`
 const Header = styled.div`
   color: rgba(0, 0, 0, 0.85);
   display: block;
-  font-family: ${props => props.theme.fontFamily};
+  font-family: ${props => props.theme.typography.fontFamily};
   font-weight: bold;
   line-height: 1em;
   font-size: 1.3em;
@@ -48,7 +48,7 @@ const Header = styled.div`
  * Card meta block.
  */
 const Meta = styled.div`
-  font-family: ${props => props.theme.fontFamily};
+  font-family: ${props => props.theme.typography.fontFamily};
   color: rgba(0, 0, 0, 0.4);
   margin-top: 0.5em;
 `
@@ -58,7 +58,7 @@ const Meta = styled.div`
  */
 const Description = styled.div`
   display: block;
-  font-family: ${props => props.theme.fontFamily};
+  font-family: ${props => props.theme.typography.fontFamily};
   margin-top: 0.5em;
   width: inherit;
 `
