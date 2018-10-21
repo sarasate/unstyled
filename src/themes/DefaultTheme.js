@@ -19,7 +19,7 @@ const DefaultTheme = {
   },
   heading: {
     fontSize: '1.6rem',
-    fontWeight: 'normal',
+    fontWeight: 600,
   },
   //  @deprecated: These will be used in theme props themselves
   fontFamily:
