@@ -1,7 +1,7 @@
 {
   "name": "unstyled",
   "description": "React components with minimal styling, easily to extend. Based on styled-components.",
-  "version": "0.1.7",
+  "version": "0.2.0",
   "main": "dist/unstyled.cjs.js",
   "module": "dist/unstyled.cjs.js",
   "author": "sarasate",
@@ -49,9 +49,9 @@
     "commitizen": "^3.0.2",
     "cz-conventional-changelog": "^2.1.0",
     "prettier": "^1.14.2",
-    "rimraf": "^2.6.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "rimraf": "^2.6.2",
     "rollup": "^1.0.2",
     "rollup-plugin-babel": "^4.2.0",
     "rollup-plugin-commonjs": "^9.2.0",
@@ -60,6 +60,6 @@
   },
   "peerDependencies": {
     "react": ">= 16.3.0",
-   "react-dom": ">= 16.3.0"
+    "react-dom": ">= 16.3.0"
   }
 }
