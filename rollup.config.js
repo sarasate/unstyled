@@ -8,7 +8,13 @@ export default {
     file: 'dist/unstyled.cjs.js',
     format: 'cjs',
   },
-  external: ['react', 'prop-types', 'styled-components', 'styled-normalize'],
+  external: [
+    'react',
+    'react-dom',
+    'prop-types',
+    'styled-components',
+    'styled-normalize',
+  ],
   plugins: [
     nodeResolve(),
     commonjs({
@@ -17,7 +23,6 @@ export default {
     }),
     babel({
       exclude: 'node_modules/**',
-      plugins: ['external-helpers'],
     }),
   ],
 }
