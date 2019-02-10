@@ -8,17 +8,10 @@ export default {
     file: 'dist/unstyled.cjs.js',
     format: 'cjs',
   },
-  external: [
-    'react',
-    'react-dom',
-    'prop-types',
-    'styled-components',
-    'styled-normalize',
-  ],
+  external: ['react', 'react-dom', 'prop-types', 'styled-components'],
   plugins: [
     nodeResolve(),
     commonjs({
-      // ignoreGlobal: true,
       include: 'node_modules/**',
     }),
     babel({

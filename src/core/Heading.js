@@ -17,7 +17,8 @@ const setFontSize = (value, size) => {
 }
 
 const Heading = styled.h1`
-  color: ${props => (props.color ? props.color : props.theme.typography.fontColor)};
+  color: ${props =>
+    props.color ? props.color : props.theme.typography.fontColor};
   display: block;
   font-family: ${props => props.theme.typography.fontFamily};
   font-size: ${props => setFontSize(props.as, props.theme.heading.fontSize)};

@@ -1,7 +1,7 @@
 {
   "name": "unstyled",
   "description": "React components with minimal styling, easily to extend. Based on styled-components.",
-  "version": "0.2.0",
+  "version": "v0.2.0",
   "main": "dist/unstyled.cjs.js",
   "module": "dist/unstyled.cjs.js",
   "author": "sarasate",
@@ -21,7 +21,7 @@
     "chroma-js": "^2.0.2",
     "prop-types": "^15.6.0",
     "styled-components": "^4.0.0-beta.3",
-    "typeface-open-sans": "^0.0.54"
+    "typeface-lato": "^0.0.54"
   },
   "files": [
     "dist"
@@ -32,7 +32,8 @@
     "prepublish": "yarn build",
     "test": "echo \"Info: no test specified\" && exit 0",
     "travis-deploy-once": "travis-deploy-once",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "format": "eslint ./**/*.js --fix"
   },
   "repository": {
     "type": "git",

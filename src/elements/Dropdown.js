@@ -17,7 +17,8 @@ export const DropdownMenu = styled.div`
 export const DropdownItem = styled.div`
   color: ${props => props.color || props.theme.typography.fontColor};
   display: inline-block;
-  font-family: ${props => props.fontFamily || props.theme.typography.fontFamily};
+  font-family: ${props =>
+    props.fontFamily || props.theme.typography.fontFamily};
   padding: 0.5rem;
   white-space: nowrap;
 `
@@ -26,7 +27,8 @@ export const DropdownHeader = styled.div.attrs({ tabIndex: 0 })`
   color: ${props => props.color || props.theme.typography.fontColor};
   cursor: pointer;
   display: inline-block;
-  font-family: ${props => props.fontFamily || props.theme.typography.fontFamily};
+  font-family: ${props =>
+    props.fontFamily || props.theme.typography.fontFamily};
   opacity: 1;
   outline: 0;
   visibility: visible;
@@ -44,7 +46,8 @@ export const DropdownHeader = styled.div.attrs({ tabIndex: 0 })`
 
 export const Dropdown = styled.div`
   display: inline-block;
-  font-family: ${props => props.fontFamily || props.theme.typography.fontFamily};
+  font-family: ${props =>
+    props.fontFamily || props.theme.typography.fontFamily};
   position: relative;
 `
 

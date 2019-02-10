@@ -1,5 +1,5 @@
 /* Basic theme with minimal styling. Nearly unstyled.*/
-require('typeface-open-sans')
+require('typeface-lato')
 
 const DefaultTheme = {
   color: {
@@ -13,7 +13,7 @@ const DefaultTheme = {
   },
   typography: {
     fontColor: 'rgba(0, 0, 0, 0.84)',
-    fontFamily: 'Open Sans,Helvetica,Arial,sans-serif',
+    fontFamily: 'Lato,Open Sans,Helvetica,Arial,sans-serif',
     fontSize: 'inherited',
     fontWeight: 400,
     lineHeight: '1rem',
