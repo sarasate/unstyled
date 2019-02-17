@@ -14,7 +14,7 @@ const Button = styled.button`
     props.color ? props.theme.color[props.color] : props.theme.color.grey};
   //border: 2px solid
   //   ${props => (props.color ? props.color : props.theme.primaryColor)};
-  border: none;
+  border: ${({ theme }) => theme.button.border};
   border-radius: ${({ rounded }) => (rounded ? '.15rem' : 0)};
   cursor: pointer;
   display: inline-block;
@@ -30,12 +30,12 @@ const Button = styled.button`
   font-style: normal;
   font-weight: bold;
   line-height: 1em;
-  margin: 1.5px;
-  min-height: 1em;
-  padding: 0.6875em 1.5em;
-  text-align: center;
-  text-decoration: none;
-  vertical-align: baseline;
+  margin: ${({ theme }) => theme.button.margin};
+  min-height: ${({ theme }) => theme.button.minHeight};
+  padding: ${({ theme }) => theme.button.padding};
+  text-align: ${({ theme }) => theme.button.textAlign};
+  text-decoration: ${({ theme }) => theme.button.textDecoration}; 
+  vertical-align: ${({ theme }) => theme.button.verticalAlign};
   &:hover {
      background-color: ${props => {
        return chroma(
